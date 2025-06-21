@@ -39,6 +39,37 @@
 
 
 ## Overview : :
+
+
+| #  | Topic                                      | Summary |
+|----|--------------------------------------------|---------|
+| 1  | JavaScript Basics                          | Core syntax, comments, variable declarations (`var`, `let`, `const`), and environment setup (Browser, Node.js, VS Code). |
+| 2  | Data Types                                  | Primitive (String, Number, Boolean, Null, Undefined, Symbol, BigInt) and Non-Primitive (Object, Array, Function, Map, Set, JSON). |
+| 3  | Conditional Statements                      | if, else if, else, switch statements; logical operators used in decision-making. |
+| 4  | Operators                                   | Arithmetic, Assignment, Comparison, Logical, Bitwise, Ternary, typeof, delete, and precedence rules. |
+| 5  | Type Coercion                               | Implicit vs Explicit conversion; avoid bugs using `===` and type conversion functions. |
+| 6  | Objects and Arrays                          | Object literals, methods, array operations (`push`, `map`, `filter`, `reduce`), Map, Set, JSON structures. |
+| 7  | Loops                                       | for, while, do...while, for...in, for...of; control flow using `break`, `continue`. |
+| 8  | Functions and Hoisting                      | Function declaration/expression, arrow functions, scope (global, block, function), hoisting, closures, IIFE. |
+| 9  | Document Object Model (DOM)                 | Selecting and manipulating HTML elements, `addEventListener`, event bubbling, capturing, delegation. |
+| 10 | Browser Object Model (BOM)                  | Interacting with browser APIs: `window`, `location`, `navigator`, `history`, `screen`. |
+| 11 | Regular Expressions                         | Pattern matching using `test`, `exec`, `match`, `replace` for string validation and search. |
+| 12 | OOP in JavaScript                           | Objects, constructors, prototypes, ES6 classes, inheritance, encapsulation, polymorphism. |
+| 13 | HTTP Requests (AJAX, Fetch, Promises)       | Sending/receiving data using `XMLHttpRequest`, `fetch()`, Promises, `async/await`, and error handling. |
+| 14 | jQuery Basics                               | DOM selection, manipulation, event handling, and AJAX with simplified syntax and cross-browser support. |
+| 15 | ES6+ for ReactJS                            | let/const, arrow functions, destructuring, template literals, spread/rest, modules, Promises, async/await. |
+| 16 | Asynchronous JavaScript                     | Event loop, task queue, callbacks, Promises, `async/await`, and proper error handling. |
+| 17 | Advanced Function Concepts                  | `this` keyword, `call`, `apply`, `bind`, closures, higher-order functions, IIFE. |
+| 18 | Design Patterns                             | Reusable solutions like Singleton, Module, Observer, Factory for structuring scalable applications. |
+| 19 | Functional Programming in JS                | Pure functions, immutability, first-class functions, higher-order functions, function composition. |
+| 20 | Code Quality and Best Practices             | `"use strict"`, linting tools, debugging, testing practices to write reliable, maintainable code. |
+| 21 | Tooling                                     | npm, Babel, Webpack, Parcel, Prettier, ESLint, and testing frameworks like Jest, Mocha. |
+| 22 | Project Structure and Architecture          | Modular folder structure, dependency management, scalability, separation of concerns. |
+| 23 | Web APIs                                     | Local Storage, Session Storage, IndexedDB, Web Workers, Service Workers, Notifications. |
+| 24 | Performance Optimization                    | Reducing DOM manipulation, debouncing/throttling, lazy loading, profiling with DevTools. |
+
+
+---
 ---
 
 ## 1. JavaScript Basics
@@ -47,9 +78,11 @@
 - Used for client-side and (with Node.js) server-side scripting.
 
 ### Key Concepts:
-- Statements and Syntax
-- Comments (`//` for single line, `/* */` for multiline)
+- Syntax, Statements, and Comments
 - Variables: `var`, `let`, `const`
+- Running JS: Browser, Node.js
+- Environment Setup: Node.js, npm, VS Code
+- Role of JS: Client-side, Server-side, Web Standards
 
 ```js
 let name = "Ayush";
@@ -73,12 +106,15 @@ var city = "Mumbai";
 - **Objects**: `{ key: value }`
 - **Arrays**: `[1, 2, 3]`
 - **Functions**
+- **JSON**
+- **Maps and Sets**
 
 ---
 
 ## 3. Conditional Statements
 - `if`, `else if`, `else`
 - `switch`
+- Logical Operators in Conditions
 
 ```js
 if (score > 90) {
@@ -95,19 +131,29 @@ if (score > 90) {
 - **Assignment**: `=`, `+=`, `-=`, etc.
 - **Comparison**: `==`, `===`, `!=`, `!==`, `>`, `<`
 - **Logical**: `&&`, `||`, `!`
-- **Bitwise**, **Ternary (`? :`)**, **typeof**, **delete**
+- **Bitwise**,
+- **Ternary (`? :`)**,
+- **typeof**,
+- **delete**
+- Operator Precedence and Grouping
 
 ---
 
 ## 5. Type Coercion
+- Implicit vs Explicit Coercion
 - JS automatically converts types when needed.
 - `"5" + 2` → `'52'`
 - `"5" - 2` → `3`
-- Use `===` to avoid coercion.
+- Best Practices (`===`, `parseInt()`, `Boolean()`)
 
 ---
 
 ## 6. Objects and Arrays
+- Object Literals, Properties, Methods
+- Arrays and Array Methods: `map`, `filter`, `reduce`
+- Maps and Sets
+- JSON as Data Structure
+
 ### Objects:
 ```js
 let user = {
@@ -128,7 +174,8 @@ colors.push("yellow");
 ---
 
 ## 7. Loops
-- `for`, `while`, `do...while`, `for...of`, `for...in`
+- for, while, do...while, for...in, for...of
+- Loop Control: `break`, `continue`
 
 ```js
 for (let i = 0; i < 5; i++) {
@@ -139,6 +186,14 @@ for (let i = 0; i < 5; i++) {
 ---
 
 ## 8. Functions and Hoisting
+- Function Declaration, Expression, Arrow Functions
+- Hoisting: Functions vs Variables
+- Scope: Global, Function, Block
+- Lexical Scope and Closures
+- IIFE (Immediately Invoked Function Expressions)
+
+<br>
+
 - Function Declaration
 ```js
 function greet() {
@@ -158,9 +213,10 @@ const greet = () => "Hello";
 ---
 
 ## 9. Document Object Model (DOM)
-- `document.getElementById()`, `querySelector()`
-- `innerText`, `innerHTML`, `classList`, `style`
-- `addEventListener()` for events
+- DOM Selectors: `getElementById`, `querySelector`
+- DOM Manipulation: `innerText`, `innerHTML`, `classList`, `style`
+- Event Listeners: `addEventListener()
+- Event Propagation: Bubbling, Capturing, Delegation
 
 ```js
 document.getElementById("btn").addEventListener("click", () => {
@@ -181,20 +237,22 @@ console.log(location.href);
 ---
 
 ## 11. Regular Expressions
+- Patterns: Literals, Ranges, Groups
+- Methods: `test()`, `exec()`, `match()`, `replace()`
+
 ```js
 let pattern = /[A-Z]/g;
 let result = "Ayush".match(pattern);  // ['A']
 ```
 
-- Methods: `test()`, `exec()`, `match()`, `replace()`
 
 ---
 
-## 12. OOPs in JS
-- **Object Literals**
-- **Constructor Functions**
-- **Prototypes**
-- **Classes (ES6)**
+## 12.  Object-Oriented Programming (OOP) in JS
+- Object Literals, Constructor Functions
+- Prototypes and Prototypal Inheritance
+- Classes (ES6)
+- Encapsulation, Inheritance, Polymorphism
 
 ```js
 class Person {
@@ -210,6 +268,13 @@ class Person {
 ---
 
 ## 13. HTTP Requests
+- AJAX using `XMLHttpRequest`
+- Fetch API
+- Promises and `async/await`
+- Error Handling: `try/catch`, `.catch()`, `finally`
+
+<br>
+
 ### AJAX (Asynchronous JavaScript and XML)
 ```js
 let xhr = new XMLHttpRequest();
@@ -244,20 +309,21 @@ $(document).ready(function() {
 });
 ```
 - Uses `$()` as a shorthand for document selection
+- Event HandlingHandling
+- AJAX
 - Cross-browser compatibility
-- DOM traversal, manipulation, animations, and AJAX
+- DOM Selection, traversal, manipulation, animations, and AJAX
 
 ---
 
 ## 15. ES6 for ReactJS
-- **let** and **const**
-- **Arrow functions**
-- **Template literals**
-- **Destructuring**
-- **Spread and Rest operator**
-- **Modules (import/export)**
-- **Promises**, **async/await**
-- **Classes and Inheritance**
+- `let`, `const`, Arrow Functions
+- Template Literals
+- Destructuring
+- Spread and Rest Operators
+- Modules: `import/export`
+- Promises, async/await
+- Classes and Inheritance
 
 ```js
 const user = { name: "Ayush", age: 23 };
@@ -267,3 +333,71 @@ const { name, age } = user;
 ```js
 const sum = (...nums) => nums.reduce((a, b) => a + b, 0);
 ```
+
+---
+
+## 16. Asynchronous JavaScript
+- Event Loop
+- Callbacks, Promises, async/await
+- Error Handling with async code
+
+---
+
+## 17. Advanced Function Concepts
+- `this` Keyword
+- `call`, `apply`, `bind`
+- Closures and IIFE
+- Higher-Order Functions
+
+---
+
+## 18. Design Patterns
+- Singleton
+- Observer
+- Module
+- Factory
+
+---
+
+## 19. Functional Programming
+- Pure Functions
+- Immutability
+- Higher-Order Functions
+- Function Composition
+
+---
+
+## 20. Code Quality and Best Practices
+- `"use strict"`
+- Linting
+- Debugging Tools
+- Testing with Frameworks
+
+---
+
+## 21. Tooling
+- npm, Babel, Parcel
+- Webpack, Linters, Prettier
+- Testing Frameworks (Jest, Mocha)
+
+---
+
+## 22. Project Structure and Architecture
+- Modular Code Organization
+- Dependency Management
+- Folder Structure Best Practices
+
+---
+
+## 23. Web APIs
+- Local Storage & Session Storage
+- IndexedDB
+- Web Workers & Service Workers
+
+---
+
+## 24. Performance Optimization
+- Profiling with DevTools
+- Reducing DOM Manipulations
+- Debouncing and Throttling
+- Lazy Loading and Efficient Selectors
