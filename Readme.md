@@ -84,11 +84,93 @@
 - Environment Setup: Node.js, npm, VS Code
 - Role of JS: Client-side, Server-side, Web Standards
 
+##
+
+### Syntax, Statements, and Comments
+
+<details>
+<summary>Click to expand example</summary>
+
 ```js
-let name = "Ayush";
-const age = 23;
-var city = "Mumbai";
+// This is a single-line comment
+
+/*
+ This is a
+ multi-line comment
+*/
+
+console.log("Hello, JavaScript!");
 ```
+
+</details>
+
+---
+
+### Variables: `var`, `let`, `const`
+
+<details>
+<summary>Click to expand example</summary>
+
+```js
+var city = "Mumbai"; // function scoped
+let name = "Ayush";  // block scoped
+const age = 23;      // block scoped and can't be reassigned
+```
+
+</details>
+
+---
+
+### Running JS: Browser vs Node.js
+
+<details>
+<summary>Click to expand example</summary>
+
+**In Browser:**
+```html
+<script>
+  alert("Running in the browser!");
+</script>
+```
+
+**In Node.js:**
+```js
+// Save this in a file named app.js
+console.log("Running in Node.js");
+// Run: node app.js
+```
+
+</details>
+
+---
+
+### Environment Setup: Node.js, npm, VS Code
+
+<details>
+<summary>Click to expand setup</summary>
+
+1. Download and install [Node.js](https://nodejs.org/)
+2. Use `npm` to install packages:
+   ```bash
+   npm install express
+   ```
+3. Use [Visual Studio Code](https://code.visualstudio.com/) as your code editor.
+
+</details>
+
+---
+
+### Role of JavaScript
+
+<details>
+<summary>Click to expand explanation</summary>
+
+- **Client-side**: Form validations, UI interactivity, AJAX requests.
+- **Server-side (Node.js)**: APIs, backend logic, database interactions.
+- **Web Standards**: JavaScript is a core part of HTML/CSS/JS stack.
+
+</details>
+
 
 ---
 
