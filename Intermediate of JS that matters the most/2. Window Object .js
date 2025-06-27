@@ -24,7 +24,10 @@
 // etc.
 
 
-// Example of using the window object
+// ----------------------------------------------------------
+
+
+// Example of using the window object :
 console.log(window.document.title); // Logs the title of the current document
 console.log(window.location.href); // Logs the current URL
 console.log(window.navigator.userAgent); // Logs the user agent string of the browser
@@ -34,7 +37,7 @@ console.log(window.navigator.userAgent); // Logs the user agent string of the br
 // window.open("https://www.example.com"); // Opens a new tab with the specified URL
 
 
-// More advanced example of using the window object
+// More example :
 function openNewWindow() {
     const newWindow = window.open("", "newWindow", "width=400,height=400");
     newWindow.document.write("<h1>Hello from the new window!</h1>");
