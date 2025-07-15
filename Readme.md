@@ -39,6 +39,10 @@ Explore this repo to learn, revise, and build your frontend development skills ð
 * [HTTP Requests](https://github.com/ayush-sleeping/Learning_Javascript/tree/main/13.%20HTTP%20Requests)
 * [jQuery Basics](https://github.com/ayush-sleeping/Learning_Javascript/tree/main/14.%20jQuery%20Basics)
 * [ES6 for ReactJS](https://github.com/ayush-sleeping/Learning_Javascript/tree/main/15.%20ES6%20for%20ReactJS)
+* []()
+* []()
+* []()
+* []()
 
 <br>
 
