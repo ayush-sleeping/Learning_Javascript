@@ -74,7 +74,11 @@ Explore this repo to learn, revise, and build your frontend development skills ğ
 
 <br>
 
+<br>
 
+<br>
+
+<br>
 
 ## Overview : :
 
@@ -108,11 +112,6 @@ Explore this repo to learn, revise, and build your frontend development skills ğ
 
 ---
 
-
-
-
-
-
 <br>
 
 <br>
@@ -122,21 +121,25 @@ Explore this repo to learn, revise, and build your frontend development skills ğ
 
 <br>
 
-## ğŸš€ JavaScript Interview Questions - Organized by Difficulty Level
+## ğŸš€ JavaScript Problem Solving Questions - Organized by Difficulty Level
+
+<br>
+
+<br>
 
 ### ğŸ“š Basic Level Questions (Fundamentals)
 
 | No. | Question | Category | Solution |
 |-----|----------|----------|----------|
-| 1   | Calculate sum of two numbers | Functions | [View](./basic/calculate-sum-two-numbers.js) |
-| 2   | Check if number is even or odd | Conditional Logic | [View](./basic/check-even-odd.js) |
-| 3   | Reverse a string | String Manipulation | [View](./basic/reverse-string.js) |
-| 4   | Check if string is palindrome | String Manipulation | [View](./basic/check-palindrome.js) |
-| 5   | Find factorial of a number | Mathematical Operations | [View](./basic/factorial.js) |
-| 6   | Generate Fibonacci sequence | Mathematical Operations | [View](./basic/fibonacci-sequence.js) |
-| 7   | Sum all numbers in array | Array Operations | [View](./basic/sum-array.js) |
-| 8   | Find largest number in array | Array Operations | [View](./basic/find-largest.js) |
-| 9   | Find minimum value in array | Array Operations | [View](./basic/find-minimum.js) |
+| 01  | Calculate sum of two numbers | Functions | [View](./basic/calculate-sum-two-numbers.js) |
+| 02  | Check if number is even or odd | Conditional Logic | [View](./basic/check-even-odd.js) |
+| 03  | Reverse a string | String Manipulation | [View](./basic/reverse-string.js) |
+| 04  | Check if string is palindrome | String Manipulation | [View](./basic/check-palindrome.js) |
+| 05  | Find factorial of a number | Mathematical Operations | [View](./basic/factorial.js) |
+| 06  | Generate Fibonacci sequence | Mathematical Operations | [View](./basic/fibonacci-sequence.js) |
+| 07  | Sum all numbers in array | Array Operations | [View](./basic/sum-array.js) |
+| 08  | Find largest number in array | Array Operations | [View](./basic/find-largest.js) |
+| 09  | Find minimum value in array | Array Operations | [View](./basic/find-minimum.js) |
 | 10  | Get last element of array | Array Operations | [View](./basic/get-last-element.js) |
 | 11  | Remove first element from array | Array Operations | [View](./basic/remove-first-element.js) |
 | 12  | Reverse an array | Array Operations | [View](./basic/reverse-array.js) |
@@ -169,7 +172,11 @@ Explore this repo to learn, revise, and build your frontend development skills ğ
 | 39 | Count words in a sentence | String Analysis | [View](./basic/count-words.js) |
 | 40 | Remove spaces from string | String Manipulation | [View](./basic/remove-spaces.js) |
 
-### ğŸ¯ Intermediate Level Questions
+<br>
+
+<br>
+
+## ğŸ¯ Intermediate Level Questions
 
 | No. | Question | Category | Solution |
 |-----|----------|----------|----------|
@@ -208,7 +215,11 @@ Explore this repo to learn, revise, and build your frontend development skills ğ
 | 73  | Parse and stringify JSON | JSON Operations | [View](./intermediate/json-operations.js) |
 | 74  | Convert object to array | Object/Array Conversion | [View](./intermediate/object-to-array.js) |
 
-### ğŸ”¥ Advanced Level Questions
+<br>
+
+<br>
+
+## ğŸ”¥ Advanced Level Questions
 
 | No. | Question | Category | Solution |
 |-----|----------|----------|----------|
@@ -229,7 +240,7 @@ Explore this repo to learn, revise, and build your frontend development skills ğ
 | 89  | Convert number to Roman numerals | Advanced Mathematical Operations | [View](./advanced/roman-numerals.js) |
 | 90  | Find largest element in nested array | Advanced Array Operations | [View](./advanced/largest-nested.js) |
 
-### ğŸ› ï¸ Practical/Real-World Questions
+## ğŸ› ï¸ Practical/Real-World Questions
 
 | No. | Question | Category | Solution |
 |-----|----------|----------|----------|
