@@ -131,28 +131,28 @@ Explore this repo to learn, revise, and build your frontend development skills ð
 
 | No. | Question | Category | Solution |
 |-----|----------|----------|----------|
-| 01  | Calculate sum of two numbers | Functions | [View](./basic/calculate-sum-two-numbers.js) |
-| 02  | Check if number is even or odd | Conditional Logic | [View](./basic/check-even-odd.js) |
-| 03  | Reverse a string | String Manipulation | [View](./basic/reverse-string.js) |
-| 04  | Check if string is palindrome | String Manipulation | [View](./basic/check-palindrome.js) |
-| 05  | Find factorial of a number | Mathematical Operations | [View](./basic/factorial.js) |
-| 06  | Generate Fibonacci sequence | Mathematical Operations | [View](./basic/fibonacci-sequence.js) |
-| 07  | Sum all numbers in array | Array Operations | [View](./basic/sum-array.js) |
-| 08  | Find largest number in array | Array Operations | [View](./basic/find-largest.js) |
-| 09  | Find minimum value in array | Array Operations | [View](./basic/find-minimum.js) |
-| 10  | Get last element of array | Array Operations | [View](./basic/get-last-element.js) |
-| 11  | Remove first element from array | Array Operations | [View](./basic/remove-first-element.js) |
-| 12  | Reverse an array | Array Operations | [View](./basic/reverse-array.js) |
-| 13  | Create arrow function | Functions | [View](./basic/arrow-function.js) |
-| 14  | Add property to object | Objects | [View](./basic/add-property.js) |
-| 15  | Delete property from object | Objects | [View](./basic/delete-property.js) |
-| 16  | Create object and print property | Objects | [View](./basic/create-object.js) |
-| 17  | Convert string to array of words | String/Array Conversion | [View](./basic/string-to-array.js) |
-| 18  | Write switch statement | Conditional Logic | [View](./basic/switch-statement.js) |
-| 19  | Convert Celsius to Fahrenheit | Mathematical Operations | [View](./basic/celsius-to-fahrenheit.js) |
-| 20  | Convert Fahrenheit to Celsius | Mathematical Operations | [View](./basic/fahrenheit-to-celsius.js) |
-| 21  | Check if number is prime | Mathematical Operations | [View](./basic/check-prime.js) |
-| 22  | Calculate power of a number | Mathematical Operations | [View](./basic/calculate-power.js) |
+| 01  | Calculate sum of first N natural numbers | Functions | [View](./Problem%20Solving/0.%20Basics%20/01.%20Sum%20of%20first%20N%20natural%20numbers%20.js) |
+| 02  | Check if number is even or odd | Conditional Logic | [View](./Problem%20Solving/0.%20Basics%20/02.%20Check%20if%20a%20number%20is%20even%20or%20odd%20.js) |
+| 03  | Reverse a string | String Manipulation | [View](./Problem%20Solving/0.%20Basics%20/03.%20Reverse%20a%20string%20.js) |
+| 04  | Check if string is palindrome | String Manipulation | [View](./Problem%20Solving/0.%20Basics%20/04.%20Check%20if%20a%20string%20is%20a%20palindrome%20.js) |
+| 05  | Find factorial of a number | Mathematical Operations | [View](./Problem%20Solving/0.%20Basics%20/05.%20Find%20factorial%20of%20a%20number%20.js) |
+| 06  | Generate Fibonacci sequence | Mathematical Operations | [View](./Problem%20Solving/0.%20Basics%20/06.%20Generate%20Fibonacci%20series%20up%20to%20N%20terms%20.js) |
+| 07  | Sum all numbers in array | Array Operations | [View](./Problem%20Solving/0.%20Basics%20/07.%20Sum%20all%20numbers%20in%20array%20.js) |
+| 08  | Find largest number in array | Array Operations | [View](./Problem%20Solving/0.%20Basics%20/08.%20Find%20largest%20number%20in%20array%20.js) |
+| 09  | Find minimum value in array | Array Operations | [View](./Problem%20Solving/0.%20Basics%20/09.%20Find%20minimum%20value%20in%20array%20.js) |
+| 10  | Get last element of array | Array Operations | [View](./Problem%20Solving/0.%20Basics%20/10.%20Get%20last%20element%20of%20array%20.js) |
+| 11  | Remove first element from array | Array Operations | [View](./Problem%20Solving/0.%20Basics%20/11.%20Remove%20first%20element%20from%20array%20.js) |
+| 12  | Reverse an array | Array Operations | [View](./Problem%20Solving/0.%20Basics%20/12.%20Reverse%20an%20array%20.js) |
+| 13  | Create arrow function | Functions | [View](./Problem%20Solving/0.%20Basics%20/13.%20Create%20arrow%20function%20.js) |
+| 14  | Add property to object | Objects | [View](./Problem%20Solving/0.%20Basics%20/14.%20Add%20property%20to%20object%20.js) |
+| 15  | Delete property from object | Objects | [View](./Problem%20Solving/0.%20Basics%20/15.%20Delete%20property%20from%20object%20.js) |
+| 16  | Create object and print property | Objects | [View](./Problem%20Solving/0.%20Basics%20/16.%20Create%20object%20and%20print%20property%20.js) |
+| 17  | Convert string to array of words | String/Array Conversion | [View](./Problem%20Solving/0.%20Basics%20/17.%20Convert%20string%20to%20array%20of%20words%20.js) |
+| 18  | Write switch statement | Conditional Logic | [View](./Problem%20Solving/0.%20Basics%20/18.%20Write%20switch%20statement%20.js) |
+| 19  | Convert Celsius to Fahrenheit | Mathematical Operations | [View](./Problem%20Solving/0.%20Basics%20/19.%20Convert%20Celsius%20to%20Fahrenheit%20.js) |
+| 20  | Convert Fahrenheit to Celsius | Mathematical Operations | [View](./Problem%20Solving/0.%20Basics%20/20.%20Convert%20Fahrenheit%20to%20Celsius%20.js) |
+| 21  | Check if number is prime | Mathematical Operations | [View](./Problem%20Solving/0.%20Basics%20/21.%20Check%20if%20number%20is%20prime%20.js) |
+| 22  | Calculate power of a number | Mathematical Operations | [View](./Problem%20Solving/0.%20Basics%20/22.%20Calculate%20power%20of%20a%20number%20.js) |
 | 23 | Find words containing specific letter and its position | String Analysis | [View](./basic/find-letter-position.js) |
 | 24 | Reverse a number (1234 â†’ 4321) | Mathematical Operations | [View](./basic/reverse-number.js) |
 | 25 | Sort array of characters alphabetically | Array Sorting | [View](./basic/sort-characters.js) |
