@@ -2,6 +2,7 @@
 // --------------------------------------------------------------------------------------------------------------::
 
 // Example 1: Most Basic - Reverse Word Characters (college → egelloc)
+// ------------------------------------------------------------------------
 let word = "college";                                        // Our word to reverse
 let reversedWord = "";                                       // Empty string to store result
 for (let i = word.length - 1; i >= 0; i--) {               // Start from last character, go backwards
@@ -26,10 +27,9 @@ Loop 7: i=0, word[0]="c", reversedWord = "egello" + "c" = "egelloc"
 */
 
 
-// --------------------------------------------------------------------------------------------------------------::
-
 
 // Example 2: Reverse word order in a sentence (hii how are you doing! → doing! you are how hii)
+// ------------------------------------------------------------------------
 let sentence = "hii how are you doing!";                   // Our sentence to reverse word order
 let words = [];                                             // Array to store individual words
 let currentWord = "";                                       // String to build current word character by character
@@ -80,6 +80,3 @@ Step 2 - Reversing word order:
 - i=1: reversedSentence = "doing! you are" + " " + "how" = "doing! you are how"
 - i=0: reversedSentence = "doing! you are how" + " " + "hii" = "doing! you are how hii"
 */
-
-
-// --------------------------------------------------------------------------------------------------------------::

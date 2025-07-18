@@ -10,6 +10,7 @@ const cleanWords = messyString.split(/\s+/);  // Using regex with split
 console.log(cleanWords);
 
 // Method without built-in functions - Manual approach
+// ------------------------------------------------------------------------
 const text = "Hello world javascript programming";
 const wordsArray = [];                              // Result array
 let currentWord = "";                               // Current word being built
@@ -36,6 +37,7 @@ console.log(wordsArray);        // Output: ['Hello', 'world', 'javascript', 'pro
 
 
 // Alternative manual approach using while loop
+// ------------------------------------------------------------------------
 const text2 = "JavaScript is awesome";
 const result = [];
 let word = "";

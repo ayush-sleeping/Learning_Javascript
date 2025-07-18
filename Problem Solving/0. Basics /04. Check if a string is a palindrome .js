@@ -1,4 +1,5 @@
 // Q. Check if a string is a palindrome :
+// ------------------------------------------------------------------------ ::
 
 let str = "mam";
 let reversed = "";

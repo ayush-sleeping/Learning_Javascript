@@ -1,7 +1,7 @@
 // Get the last element of array :
 // --------------------------------------------------------------------------------------------------------------::
 
-// Way 1: Simple Direct Code (No Function) :
+// Way 1: Simple Direct Code (No Function) :// ------------------------------------------------------------------------
 let fruits = ["apple", "banana", "orange", "mango"];  // Our array of fruits
 let lastElement = fruits[fruits.length - 1];          // Get last element using length-1 index
 console.log("Last element is:", lastElement);         // Output: "mango"
@@ -15,10 +15,9 @@ let lastNumber = numbers[numbers.length - 1];
 console.log("Last number is:", lastNumber);           // Output: 50
 
 
-// --------------------------------------------------------------------------------------------------------------::
-
 
 // Way 2: Function with Traditional Approach :
+// ------------------------------------------------------------------------
 function getLastElement(array) {                      // Create function that takes an array as parameter
     return array[array.length - 1];                  // Return element at last index (length-1)
 }
@@ -35,9 +34,7 @@ Step-by-step execution for ["red", "blue", "green"]:
 */
 
 
-// --------------------------------------------------------------------------------------------------------------::
-
-// Way 3: Function with Modern Methods (ES6+ Syntax) :
+// Way 3: Function with Modern Methods (ES6+ Syntax) :// ------------------------------------------------------------------------
 function getLastElement2(array) {                     // Create function using modern array methods
     return array.at(-1);                             // .at(-1) gets the last element (negative indexing)
 }

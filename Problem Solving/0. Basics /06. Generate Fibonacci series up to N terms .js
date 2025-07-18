@@ -1,4 +1,5 @@
 // Q. Generate Fibonacci series up to N terms :
+// ------------------------------------------------------------------------ ::
 
 let n = 10; // Number of terms you want
 let a = 0, b = 1; // First two terms of Fibonacci series

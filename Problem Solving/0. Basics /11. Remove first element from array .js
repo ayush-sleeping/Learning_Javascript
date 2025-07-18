@@ -2,6 +2,7 @@
 // --------------------------------------------------------------------------------------------------------------::
 
 // Level 1: Most Basic - (No Built-in Methods) :
+// ------------------------------------------------------------------------
 let numbers = [10, 20, 30, 40];                              // Our original array of numbers
 let result = [];                                              // Create empty array to store result
 let position = 0;                                             // Keep track of where to put next element
@@ -34,10 +35,9 @@ Final result: [20, 30, 40]
 */
 
 
-// --------------------------------------------------------------------------------------------------------------::
-
 
 // Level 2: Function with Manual Loop :
+// ------------------------------------------------------------------------
 function removeFirstElement(array) {                         // Create function that takes an array as parameter
     let newArray = [];                                       // Create empty array to store result
     let newIndex = 0;                                        // Keep track of where to put next element
@@ -60,10 +60,9 @@ console.log(removeFirstElement(["single"]));                              // Exp
 */
 
 
-// --------------------------------------------------------------------------------------------------------------::
-
 
 // Level 3: Function with Built-in Array Method (Modern Approach) :
+// ------------------------------------------------------------------------
 function removeFirstElement2(array) {                       // Create function using built-in array methods
     let arrayCopy = [...array];                             // Create copy of original array (spread operator)
     arrayCopy.shift();                                      // Remove first element from the copy
@@ -95,9 +94,8 @@ console.log(removeFirstElement3(["x", "y", "z"]));         // Expected output: [
 */
 
 
-// --------------------------------------------------------------------------------------------------------------::
-
 // Bonus Level 4: Approach with Error Handling :
+// ------------------------------------------------------------------------
 function removeFirstElementSafe(array) {                    // Function with proper error handling
     if (!Array.isArray(array)) {                           // Check if input is actually an array
         throw new Error("Input must be an array");          // Throw error for invalid input
