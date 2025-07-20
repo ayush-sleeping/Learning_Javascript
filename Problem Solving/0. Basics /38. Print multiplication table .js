@@ -39,6 +39,7 @@ Multiplication Table of 5:
 */
 
 
+// ------------------------------------------------------------------------------------
 const printTable2 = (num, start, end) => {
     for (let i = start; i <= end; i++) {
         console.log(`${num} x ${i} = ${num * i}`);

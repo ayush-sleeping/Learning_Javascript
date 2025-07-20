@@ -4,15 +4,12 @@
 let a = 48;
 let b = 18;
 let gcd = 1;
-
 for (let i = 1; i <= a && i <= b; i++) {
     if (a % i === 0 && b % i === 0) {
         gcd = i;
     }
 }
-
 console.log("GCD of " + a + " and " + b + " is: " + gcd);
-
 /*
 GCD (Greatest Common Divisor) is the largest number that divides both numbers evenly.
 
@@ -41,6 +38,8 @@ Final: gcd=6
 LOGIC: Check every number, keep updating GCD when we find a common divisor
 */
 
+
+// ------------------------------------------------------------------------------------
 function findGCDEuclidean(num1, num2) {
     while (num2 !== 0) {
         let temp = num2;
@@ -49,10 +48,8 @@ function findGCDEuclidean(num1, num2) {
     }
     return num1;
 }
-
 console.log("Euclidean method - GCD(56, 98):", findGCDEuclidean(56, 98));
 console.log("Euclidean method - GCD(48, 18):", findGCDEuclidean(48, 18));
-
 /*
 EXPLANATION FOR EUCLIDEAN METHOD:
 
@@ -77,20 +74,19 @@ Step 4: num2=0, return num1=6
 ADVANTAGE: Much faster than checking all numbers, O(log min(a,b)) complexity
 */
 
+
+// ------------------------------------------------------------------------------------
 let x = 24;
 let y = 36;
 let smaller = x < y ? x : y;
 let result = 1;
-
 for (let i = smaller; i >= 1; i--) {
     if (x % i === 0 && y % i === 0) {
         result = i;
         break;
     }
 }
-
 console.log("Optimized method - GCD(" + x + ", " + y + "):", result);
-
 /*
 EXPLANATION FOR OPTIMIZED BRUTE FORCE:
 
@@ -119,13 +115,14 @@ ADVANTAGE: Starts from largest possible, exits early when found
 LOGIC: First common divisor found when counting down is the greatest
 */
 
+
+// ------------------------------------------------------------------------------------
 function gcdRecursive(a, b) {
     if (b === 0) {
         return a;
     }
     return gcdRecursive(b, a % b);
 }
-
 console.log("Recursive method - GCD(72, 48):", gcdRecursive(72, 48));
 
 /*
@@ -154,10 +151,11 @@ gcdRecursive(72, 48)
 ADVANTAGE: Clean, mathematical representation of Euclidean algorithm
 */
 
+
+// ------------------------------------------------------------------------------------
 function findGCDManual(num1, num2) {
     let a = num1;
     let b = num2;
-
     while (a !== b) {
         if (a > b) {
             a = a - b;
@@ -165,12 +163,9 @@ function findGCDManual(num1, num2) {
             b = b - a;
         }
     }
-
     return a;
 }
-
 console.log("Manual subtraction - GCD(15, 25):", findGCDManual(15, 25));
-
 /*
 EXPLANATION FOR MANUAL SUBTRACTION METHOD:
 

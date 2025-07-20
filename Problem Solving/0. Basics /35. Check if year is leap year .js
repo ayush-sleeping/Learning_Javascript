@@ -59,6 +59,8 @@ EXECUTION for 1900:
 Result: not leap year
 */
 
+
+// ------------------------------------------------------------------------------------
 function checkLeapYear(inputYear) {
     let result = false;
 
@@ -107,6 +109,7 @@ LOGIC FLOW: Check most restrictive condition first (400), then less restrictive 
 */
 
 
+// ------------------------------------------------------------------------------------
 function isLeapYearOneLinear(yr) {
     return (yr % 4 === 0 && yr % 100 !== 0) || (yr % 400 === 0);
 }
@@ -139,6 +142,8 @@ Result: false || false = false (not leap year)
 ADVANTAGE: Concise, readable, covers all cases in one expression
 */
 
+
+// ------------------------------------------------------------------------------------
 let builtInYear = 2024;
 let testDate = new Date(builtInYear, 1, 29);
 let isLeapBuiltIn = testDate.getMonth() === 1;

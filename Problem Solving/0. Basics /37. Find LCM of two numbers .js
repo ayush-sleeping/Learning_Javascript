@@ -55,7 +55,8 @@ Step 2: LCM = (12 × 18) / 6 = 216 / 6 = 36
 */
 
 
-// Method 2: Brute Force Approach
+// Brute Force Approach
+// ------------------------------------------------------------------------------------
 const findLCM2 = (a, b) => {
     let lcm = a > b ? a : b;
     while (true) {
@@ -66,7 +67,8 @@ const findLCM2 = (a, b) => {
     }
 };
 
-// Method 3: Using Step Increment
+// Using Step Increment
+// ------------------------------------------------------------------------------------
 const findLCM3 = (a, b) => {
     let max = a > b ? a : b;
     let min = a < b ? a : b;
@@ -78,7 +80,8 @@ const findLCM3 = (a, b) => {
     return lcm;
 };
 
-// Method 4: Recursive Approach with GCD
+// Recursive Approach with GCD
+// ------------------------------------------------------------------------------------
 const findLCM4 = (a, b) => {
     const gcd = (x, y) => {
         if (y === 0) return x;
@@ -105,7 +108,6 @@ if (process.argv.length > 2) {
 
 /*
 EXPLANATION:
-
 Brute Force Approach
 ==============================
 const findLCM2 = (a, b) => {

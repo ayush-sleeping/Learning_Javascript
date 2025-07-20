@@ -29,6 +29,7 @@ REMOVES: spaces, tabs, newlines, carriage returns
 
 
 // Manual loop approach (no built-in methods)
+// ------------------------------------------------------------------------------------
 const removeSpaces2 = (str) => {
     if (!str) return "";
 

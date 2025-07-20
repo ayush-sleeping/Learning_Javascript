@@ -29,6 +29,7 @@ EXAMPLE: "Hello   world" would count as 4 words (including empty strings)
 */
 
 
+// ------------------------------------------------------------------------------------
 const countWords3 = (sentence) => {
     if (!sentence) return 0;
     let count = 0;
