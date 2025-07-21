@@ -1,6 +1,45 @@
 // Q. Count the number of vowels in a string :
 // --------------------------------------------------------------------------------------------------------------::
 
+const text = "Your interview is scheduled for tomorrow.";
+let vowelCount = 0;
+
+// Calculate string length manually (no .length)
+let stringLength = 0;
+while (text[stringLength] !== undefined) {
+    stringLength = stringLength + 1;
+}
+
+// Check each character manually
+for (let i = 0; i < stringLength; i++) {
+    let char = text[i];
+    let isVowel = false;
+
+    // Manual case conversion (no .toLowerCase())
+    // Convert uppercase to lowercase manually
+    if (char === "A") char = "a";
+    if (char === "E") char = "e";
+    if (char === "I") char = "i";
+    if (char === "O") char = "o";
+    if (char === "U") char = "u";
+
+    // Manual vowel checking (no arrays or sets)
+    if (char === "a") isVowel = true;
+    if (char === "e") isVowel = true;
+    if (char === "i") isVowel = true;
+    if (char === "o") isVowel = true;
+    if (char === "u") isVowel = true;
+
+    // Count if vowel found
+    if (isVowel === true) {
+        vowelCount = vowelCount + 1;
+    }
+}
+console.log(text);
+console.log(vowelCount);
+
+
+
 // Logic or sudo code :
 /*
 1. Initialize a counter variable to 0.
