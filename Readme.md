@@ -153,7 +153,45 @@ Explore this repo to learn, revise, and build your frontend development skills ð
       * [Q97. Count word occurrences - String Analysis](./Problem%20Solving/3.%20Practical/97.%20Count%20word%20occurrences%20.js)
       * [Q98. Dynamically insert DOM components - DOM Manipulation](./Problem%20Solving/3.%20Practical/98.%20Dynamically%20insert%20DOM%20components%20.js)
       * [Q99. Analyze code output - Code Analysis](./Problem%20Solving/3.%20Practical/99.%20Analyze%20code%20output%20.js)
-   * [DSA in JS]()
+   * [DSA in JS](./DSA%20in%20JS/)
+      * [Arrays](./DSA%20in%20JS/01.%20Arrays/)
+         * [Kadane's Algorithm - Maximum Subarray Sum](./DSA%20in%20JS/01.%20Arrays/01.%20Kadanes%20Algorithm%20-%20Maximum%20Subarray%20Sum.js)
+         * [Stock Buy and Sell](./DSA%20in%20JS/01.%20Arrays/02.%20Stock%20Buy%20and%20Sell.js)
+         * [Find Majority Element (N/2 times)](./DSA%20in%20JS/01.%20Arrays/03.%20Find%20Majority%20Element.js)
+         * [Remove Duplicates from Sorted Array](./DSA%20in%20JS/01.%20Arrays/04.%20Remove%20Duplicates%20from%20Sorted%20Array.js)
+         * [Count Maximum Consecutive Ones](./DSA%20in%20JS/01.%20Arrays/05.%20Count%20Maximum%20Consecutive%20Ones.js)
+         * [Kth Largest/Smallest Element](./DSA%20in%20JS/01.%20Arrays/06.%20Kth%20Largest%20Smallest%20Element.js)
+      * [Linked Lists](./DSA%20in%20JS/02.%20Linked%20Lists/)
+         * [Reverse a Linked List](./DSA%20in%20JS/02.%20Linked%20Lists/01.%20Reverse%20a%20Linked%20List.js)
+         * [Find Middle Element in Linked List](./DSA%20in%20JS/02.%20Linked%20Lists/02.%20Find%20Middle%20Element%20in%20Linked%20List.js)
+      * [Binary Search](./DSA%20in%20JS/03.%20Binary%20Search/)
+         * [Nth Root using Binary Search](./DSA%20in%20JS/03.%20Binary%20Search/01.%20Nth%20Root%20using%20Binary%20Search.js)
+      * [Stacks and Queues](./DSA%20in%20JS/04.%20Stacks%20and%20Queues/)
+         * [Implement Stack using Array](./DSA%20in%20JS/04.%20Stacks%20and%20Queues/01.%20Implement%20Stack%20using%20Array.js)
+         * [Implement Queue using Array](./DSA%20in%20JS/04.%20Stacks%20and%20Queues/02.%20Implement%20Queue%20using%20Array.js)
+         * [Next Greater Element using Stack](./DSA%20in%20JS/04.%20Stacks%20and%20Queues/03.%20Next%20Greater%20Element%20using%20Stack.js)
+         * [Sort a Stack](./DSA%20in%20JS/04.%20Stacks%20and%20Queues/04.%20Sort%20a%20Stack.js)
+         * [Next Smaller Element](./DSA%20in%20JS/04.%20Stacks%20and%20Queues/05.%20Next%20Smaller%20Element.js)
+      * [Strings](./DSA%20in%20JS/05.%20Strings/)
+         * [Reverse Words in a String](./DSA%20in%20JS/05.%20Strings/01.%20Reverse%20Words%20in%20a%20String.js)
+         * [Roman to Integer](./DSA%20in%20JS/05.%20Strings/02.%20Roman%20to%20Integer.js)
+         * [Longest Common Prefix](./DSA%20in%20JS/05.%20Strings/03.%20Longest%20Common%20Prefix.js)
+         * [Z Function](./DSA%20in%20JS/05.%20Strings/04.%20Z%20Function.js)
+         * [Valid Anagram](./DSA%20in%20JS/05.%20Strings/05.%20Valid%20Anagram.js)
+      * [Binary Trees](./DSA%20in%20JS/06.%20Binary%20Trees/)
+         * [Inorder Traversal](./DSA%20in%20JS/06.%20Binary%20Trees/01.%20Inorder%20Traversal.js)
+         * [Preorder Traversal](./DSA%20in%20JS/06.%20Binary%20Trees/02.%20Preorder%20Traversal.js)
+         * [Postorder Traversal](./DSA%20in%20JS/06.%20Binary%20Trees/03.%20Postorder%20Traversal.js)
+         * [Right/Left View of Binary Tree](./DSA%20in%20JS/06.%20Binary%20Trees/04.%20Right%20Left%20View%20of%20Binary%20Tree.js)
+         * [Top View of Binary Tree](./DSA%20in%20JS/06.%20Binary%20Trees/05.%20Top%20View%20of%20Binary%20Tree.js)
+         * [Vertical Order Traversal](./DSA%20in%20JS/06.%20Binary%20Trees/06.%20Vertical%20Order%20Traversal.js)
+         * [Level Order Traversal](./DSA%20in%20JS/06.%20Binary%20Trees/07.%20Level%20Order%20Traversal.js)
+         * [Zig Zag Traversal](./DSA%20in%20JS/06.%20Binary%20Trees/08.%20Zig%20Zag%20Traversal.js)
+      * [Binary Search Trees](./DSA%20in%20JS/07.%20Binary%20Search%20Trees/)
+         * [Search in BST](./DSA%20in%20JS/07.%20Binary%20Search%20Trees/01.%20Search%20in%20BST.js)
+         * [Floor and Ceil in BST](./DSA%20in%20JS/07.%20Binary%20Search%20Trees/02.%20Floor%20and%20Ceil%20in%20BST.js)
+         * [Kth Largest in Stream](./DSA%20in%20JS/07.%20Binary%20Search%20Trees/03.%20Kth%20Largest%20in%20Stream.js)
+         * [Kth Largest in Array](./DSA%20in%20JS/07.%20Binary%20Search%20Trees/04.%20Kth%20Largest%20in%20Array.js)
 
 <br>
 
@@ -166,7 +204,6 @@ Explore this repo to learn, revise, and build your frontend development skills ð
 
 
 ## Quick Overview : :
-
 
 | #  | Topic                                      | Summary |
 |----|--------------------------------------------|---------|
@@ -194,7 +231,42 @@ Explore this repo to learn, revise, and build your frontend development skills ð
 | 22 | Project Structure and Architecture          | Modular folder structure, dependency management, scalability, separation of concerns. |
 | 23 | Web APIs                                     | Local Storage, Session Storage, IndexedDB, Web Workers, Service Workers, Notifications. |
 | 24 | Performance Optimization                    | Reducing DOM manipulation, debouncing/throttling, lazy loading, profiling with DevTools. |
-
+| 25 | Event Handling & Types                      | Click events: `click`, `dblclick`, `contextmenu`, `mousedown`, `mouseup`. Total 15+ mouse events, 13+ keyboard events, 8+ form events, 6+ window events. |
+| 26 | JavaScript Engine & Execution               | V8 engine, Call Stack, Memory Heap, Event Loop phases (Call Stack â†’ Web APIs â†’ Callback Queue â†’ Event Loop). |
+| 27 | Scope and Context                           | Global, Function, Block scope. Lexical scoping, `this` binding (implicit, explicit, new, arrow), execution context creation. |
+| 28 | Memory Management                           | Garbage Collection, Memory leaks, Stack vs Heap memory, Reference counting, Mark-and-sweep algorithm. |
+| 29 | Error Handling                              | try-catch-finally, Error types (SyntaxError, ReferenceError, TypeError), Custom errors, Promise error handling. |
+| 30 | Prototype and Inheritance                   | Prototype chain, `__proto__`, `Object.create()`, Constructor functions, ES6 classes, `super` keyword. |
+| 31 | Array Methods (Advanced)                    | `map`, `filter`, `reduce`, `forEach`, `find`, `some`, `every`, `flatMap`, `reduceRight`. Method chaining patterns. |
+| 32 | String Methods (Advanced)                   | `slice`, `substring`, `substr`, `split`, `replace`, `match`, `search`, Template literals, Tagged templates. |
+| 33 | JSON and Serialization                      | `JSON.parse()`, `JSON.stringify()`, Circular reference handling, Custom toJSON methods, Data transformation. |
+| 34 | Modules and Imports                         | ES6 modules (`import`/`export`), CommonJS (`require`/`module.exports`), AMD, UMD, Dynamic imports. |
+| 35 | Timing Functions                            | `setTimeout`, `setInterval`, `clearTimeout`, `clearInterval`, `requestAnimationFrame`, Debouncing vs Throttling. |
+| 36 | Data Structures in JS                       | Map, Set, WeakMap, WeakSet differences, Symbol usage, Iterator protocol, Generator functions. |
+| 37 | Security in JavaScript                      | XSS prevention, CSRF, Content Security Policy, Input validation, Secure coding practices. |
+| 38 | Browser Storage                             | localStorage vs sessionStorage vs cookies. Storage events, Storage limits, IndexedDB for large data. |
+| 39 | Network and HTTP                            | HTTP methods, Status codes, CORS, Request/Response headers, REST API patterns, GraphQL basics. |
+| 40 | Testing JavaScript                          | Unit testing (Jest), Integration testing, Mocking, Test-driven development, Code coverage. |
+| 41 | Closures and Scope Chain                    | Advanced closure patterns, module pattern, private variables, scope pollution prevention, lexical environment chains. |
+| 42 | Event Loop Deep Dive                        | Microtasks vs Macrotasks, Promise queue, setTimeout vs setImmediate, process.nextTick, task prioritization. |
+| 43 | Proxy and Reflect API                       | Object interception, meta-programming, property access control, validation, data binding patterns. |
+| 44 | Symbols and Well-known Symbols              | Symbol.iterator, Symbol.asyncIterator, Symbol.toPrimitive, creating private properties, preventing name collisions. |
+| 45 | WeakMap and WeakSet Use Cases               | Memory management, private data storage, DOM node association, preventing memory leaks in large applications. |
+| 46 | Intersection Observer API                   | Lazy loading images, infinite scrolling, viewport detection, performance optimization for large lists. |
+| 47 | Mutation Observer API                       | DOM change detection, react to dynamic content, monitoring element modifications, debugging DOM changes. |
+| 48 | Custom Elements (Web Components)            | Creating reusable components, Shadow DOM, HTML templates, encapsulation, framework-agnostic components. |
+| 49 | File API and Blob Handling                  | File upload, reading files, creating downloads, image processing, drag-and-drop file handling. |
+| 50 | Canvas and WebGL Basics                     | 2D graphics, image manipulation, data visualization, basic game development, drawing operations. |
+| 51 | Geolocation and Device APIs                 | GPS location, device orientation, camera access, microphone, notification permissions. |
+| 52 | WebSocket and Real-time Communication       | Live chat, real-time updates, server-sent events, bidirectional communication, connection management. |
+| 53 | TypeScript Fundamentals                     | Type annotations, interfaces, generics, strict mode, migration from JavaScript, better IDE support. |
+| 54 | Build Tools and Module Bundlers             | Webpack configuration, Vite, Rollup, code splitting, tree shaking, hot module replacement. |
+| 55 | Progressive Web Apps (PWA)                  | Service workers, manifest files, offline functionality, app-like experience, push notifications. |
+| 56 | HTTP Caching Strategies                     | Cache headers, ETags, cache validation, CDN usage, browser caching, performance optimization. |
+| 57 | Authentication and JWT                      | Token-based auth, refresh tokens, secure storage, OAuth flows, session management. |
+| 58 | Form Validation and Accessibility           | Custom validation, ARIA attributes, screen reader support, keyboard navigation, semantic HTML. |
+| 59 | Internationalization (i18n)                 | Multi-language support, date/number formatting, locale-specific content, RTL languages. |
+| 60 | Performance Monitoring                      | Core Web Vitals, FCP, LCP, CLS, FID, performance.mark(), User Timing API, real user monitoring. |
 
 <br>
 
