@@ -284,16 +284,16 @@ Explore this repo to learn, revise, and build your frontend development skills ð
 <br>
 
 ## 1. Basics
-- JavaScript is a **high-level, interpreted** programming language.
-- Runs in the browser and can interact with the DOM.
-- Used for client-side and (with Node.js) server-side scripting.
+    - JavaScript is a **high-level, interpreted** programming language.
+    - Runs in the browser and can interact with the DOM.
+    - Used for client-side and (with Node.js) server-side scripting.
 
 ### Key Concepts:
-- Syntax, Statements, and Comments
-- Variables: `var`, `let`, `const`
-- Running JS: Browser, Node.js
-- Environment Setup: Node.js, npm, VS Code
-- Role of JS: Client-side, Server-side, Web Standards
+    - Syntax, Statements, and Comments
+    - Variables: `var`, `let`, `const`
+    - Running JS: Browser, Node.js
+    - Environment Setup: Node.js, npm, VS Code
+    - Role of JS: Client-side, Server-side, Web Standards
 
 ##
 
@@ -387,20 +387,20 @@ console.log("Running in Node.js");
 
 ## 2. DataTypes
 ### Primitive Types:
-1. **String** - `"hello"`
-2. **Number** - `42`, `3.14`
-3. **Boolean** - `true` or `false`
-4. **Undefined** - variable declared but not assigned
-5. **Null** - intentionally empty value
-6. **Symbol** (ES6)
-7. **BigInt** - large integers beyond 2^53-1
+    1. String - `"hello"`
+    2. Number - `42`, `3.14`
+    3. Boolean - `true` or `false`
+    4. Undefined - variable declared but not assigned
+    5. Null - intentionally empty value
+    6. Symbol (ES6)
+    7. BigInt - large integers beyond 2^53-1
 
 ### Non-Primitive Types:
-- **Objects**: `{ key: value }`
-- **Arrays**: `[1, 2, 3]`
-- **Functions**
-- **JSON**
-- **Maps and Sets**
+    - Objects : `{ key: value }`
+    - Arrays : `[1, 2, 3]`
+    - Functions
+    - JSON
+    - Maps and Sets
 
 
 
