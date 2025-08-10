@@ -84,7 +84,16 @@ Explore this repo to learn, revise, and build your frontend development skills ð
 #### ðŸ”¥ Advanced JavaScript Concepts
 | #  | Category | Topic | Concept | Link |
 |----|----------|-------|---------|------|
-| 1  | **Folder** | Folder | Advanced of JS that matters | [View](./Advanced%20of%20JS%20that%20matters%20the%20most/) |
+| 1  | **Functions** | Higher Order Functions | Functions that take other functions as arguments | [View](./Advanced%20of%20JS%20that%20matters%20the%20most/01.%20higher%20order%20fncs%20%20.js) |
+| 2  | **Functions** | Constructor Functions | Function constructors for object creation | [View](./Advanced%20of%20JS%20that%20matters%20the%20most/02.%20constructor%20fncs%20.js) |
+| 3  | **Functions** | First Class Functions | Functions as first-class citizens in JavaScript | [View](./Advanced%20of%20JS%20that%20matters%20the%20most/03.%20first%20class%20fncs%20.js) |
+| 4  | **Keywords** | New Keyword | Object instantiation with new operator | [View](./Advanced%20of%20JS%20that%20matters%20the%20most/04.%20new%20keyword%20.js) |
+| 5  | **Functions** | IIFE | Immediately Invoked Function Expression | [View](./Advanced%20of%20JS%20that%20matters%20the%20most/05.%20immediately%20invoked%20function%20expression%20.js) |
+| 6  | **Objects** | Prototype | Prototype chain and inheritance mechanism | [View](./Advanced%20of%20JS%20that%20matters%20the%20most/06.%20Prototype%20.js) |
+| 7  | **Objects** | Prototype Inheritance | Prototypal inheritance patterns | [View](./Advanced%20of%20JS%20that%20matters%20the%20most/07.%20Prototype%20Inheritance.%20%20.js) |
+| 8  | **Context** | This, Call, Apply, Bind | Function context manipulation methods | [View](./Advanced%20of%20JS%20that%20matters%20the%20most/08.%20this%20calls%20apply%20bind%20.js) |
+| 9  | **Functions** | Pure & Impure Functions | Functional programming concepts | [View](./Advanced%20of%20JS%20that%20matters%20the%20most/09.%20pure%20&%20impure%20function%20.js) |
+| 10 | **Scope** | Closures | Lexical scoping and closure patterns | [View](./Advanced%20of%20JS%20that%20matters%20the%20most/10.%20Closures%20.js) |
 
 <br>
 
