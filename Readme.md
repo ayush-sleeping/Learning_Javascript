@@ -7,9 +7,28 @@ Explore this repo to learn, revise, and build your frontend development skills ð
 
 ##
 
-### Table of content:
+### Table of content ::
 
-#### ðŸ“š Core JavaScript Learning Modules
+| ðŸ“š Section | ðŸŽ¯ Focus Area | ðŸ“– Description | ðŸ”— Navigate |
+|------------|---------------|----------------|-------------|
+| **Core JavaScript Learning Modules** | Fundamentals | Complete JavaScript foundation from basics to advanced | [Go to Section](#core-javascript-learning-modules) |
+| **JavaScript Essentials by Category** | Practical Basics | Essential concepts categorized for quick learning | [Go to Section](#javascript-essentials-by-category) |
+| **Intermediate JavaScript Concepts** | Intermediate Concepts | Memory, scope, context, and advanced function patterns | [Go to Section](#intermediate-javascript-concepts) |
+| **Advanced JavaScript Concepts** | Above Intermediate Concepts | Higher-order functions, closures, prototypes, and more | [Go to Section](#advanced-javascript-concepts) |
+| **Problem Solving Questions** | Practice & Apply | 99 coding challenges across 4 difficulty levels | [Go to Section](#problem-solving-questions-organized-by-difficulty-level) |
+| **Data Structures & Algorithms** | Computer Science | 30 DSA problems with JavaScript implementations | [Go to Section](#data-structures-and-algorithms) |
+| **Quick Overview** | Summary Reference | Condensed overview of all topics for quick reference | [Go to Section](#quick-overview) |
+| **JavaScript Summary** | Detailed Summary | Comprehensive topic-wise breakdown and explanations | [Go to Section](#summary) |
+
+<br>
+
+<br>
+
+<br>
+
+#
+
+## Core JavaScript Learning Modules
 
 | #  | Section | Topic | Description | Link |
 |----|---------|-------|-------------|------|
@@ -35,7 +54,10 @@ Explore this repo to learn, revise, and build your frontend development skills ð
 
 <!-- --------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
 
-#### ðŸŽ¯ JavaScript Essentials by Category
+
+#
+
+## JavaScript Essentials by Category
 
 | #  | Section | Topic | Description | Link |
 |----|---------|-------|-------------|------|
@@ -56,7 +78,10 @@ Explore this repo to learn, revise, and build your frontend development skills ð
 
 <!-- --------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
 
-#### ðŸ”¥ Intermediate JavaScript Concepts
+
+#
+
+## Intermediate JavaScript Concepts
 
 | #  | Category | Topic | Concept | Link |
 |----|----------|-------|---------|------|
@@ -81,7 +106,10 @@ Explore this repo to learn, revise, and build your frontend development skills ð
 
 <!-- --------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
 
-#### ðŸ”¥ Advanced JavaScript Concepts
+
+#
+
+## Advanced JavaScript Concepts
 | #  | Category | Topic | Concept | Link |
 |----|----------|-------|---------|------|
 | 1  | **Functions** | Higher Order Functions | Functions that take other functions as arguments | [View](./Advanced%20of%20JS%20that%20matters%20the%20most/01.%20higher%20order%20fncs%20%20.js) |
@@ -101,7 +129,10 @@ Explore this repo to learn, revise, and build your frontend development skills ð
 
 <!-- --------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
 
-#### ðŸš€ Problem Solving Questions - Organized by Difficulty Level
+
+#
+
+## Problem Solving Questions Organized by Difficulty Level
 
 **Basics Level (Q1-Q40)**
 
@@ -246,7 +277,10 @@ Explore this repo to learn, revise, and build your frontend development skills ð
 
 <!-- --------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
 
-#### ðŸ§  Data Structures & Algorithms in JavaScript
+
+#
+
+## Data Structures and Algorithms
 
 | Q# | Category | Topic | Problem/Concept | Algorithm Type | Link |
 |----|----------|-------|-----------------|----------------|------|
@@ -296,7 +330,10 @@ Explore this repo to learn, revise, and build your frontend development skills ð
 
 
 
-## Quick Overview : :
+
+#
+
+## Quick Overview
 
 | #  | Topic                                      | Summary |
 |----|--------------------------------------------|---------|
@@ -374,9 +411,10 @@ Explore this repo to learn, revise, and build your frontend development skills ð
 
 <br>
 
-## JavaScript Summary  : :
 
-<br>
+#
+
+## Summary
 
 <br>
 
