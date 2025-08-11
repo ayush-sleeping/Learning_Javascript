@@ -1,5 +1,5 @@
 ## Learning_Javascript
-> This repository is my personal collection of JavaScript notes, practice code snippets, and web development examples. It's built to help beginners and intermediate learners understand how JavaScript powers the web, and apply it in real-world scenarios like DOM manipulation, events, API handling, and more.
+> This repository is my personal collection of JavaScript notes, practice code snippets, and web development examples. It's built to help beginners and intermediate learners understand JavaScript Language and Problem Solving.
 
 Explore this repo to learn, revise, and build your frontend development skills 💻✨
 
@@ -7,18 +7,18 @@ Explore this repo to learn, revise, and build your frontend development skills �
 
 ##
 
-### Table of content ::
+### Table of content : :
 
-| 📚 Section | 🎯 Focus Area | 📖 Description | 🔗 Navigate |
+| Section |  Focus Area |  Description |  Navigate |
 |------------|---------------|----------------|-------------|
-| **Core JavaScript Learning Modules** | Fundamentals | Complete JavaScript foundation from basics to advanced | [Go to Section](#core-javascript-learning-modules) |
-| **JavaScript Essentials by Category** | Practical Basics | Essential concepts categorized for quick learning | [Go to Section](#javascript-essentials-by-category) |
-| **Intermediate JavaScript Concepts** | Intermediate Concepts | Memory, scope, context, and advanced function patterns | [Go to Section](#intermediate-javascript-concepts) |
-| **Advanced JavaScript Concepts** | Above Intermediate Concepts | Higher-order functions, closures, prototypes, and more | [Go to Section](#advanced-javascript-concepts) |
-| **Problem Solving Questions** | Practice & Apply | 99 coding challenges across 4 difficulty levels | [Go to Section](#problem-solving-questions-organized-by-difficulty-level) |
-| **Data Structures & Algorithms** | Computer Science | 30 DSA problems with JavaScript implementations | [Go to Section](#data-structures-and-algorithms) |
+| **Core** | Fundamentals | Complete foundation from basics to advanced | [Go to Section](#core-javascript-learning-modules) |
+| **Essentials** | Practical Basics | Essential concepts categorized for quick learning | [Go to Section](#javascript-essentials-by-category) |
+| **Intermediate** | Intermediate Concepts | Memory, scope, context, and advanced function patterns | [Go to Section](#intermediate-javascript-concepts) |
+| **Advanced** | Above Intermediate Concepts | Higher-order functions, closures, prototypes, and more | [Go to Section](#advanced-javascript-concepts) |
+| **Problem Solving** | Practice & Apply | 99 coding challenges across 4 difficulty levels | [Go to Section](#problem-solving-questions-organized-by-difficulty-level) |
+| **Data Structures and Algorithms** | Computer Science | DSA problems  | [Go to Section](#data-structures-and-algorithms) |
 | **Quick Overview** | Summary Reference | Condensed overview of all topics for quick reference | [Go to Section](#quick-overview) |
-| **JavaScript Summary** | Detailed Summary | Comprehensive topic-wise breakdown and explanations | [Go to Section](#summary) |
+| **Summary** | Detailed Summary | Comprehensive topic-wise breakdown and explanations | [Go to Section](#summary) |
 
 <br>
 
