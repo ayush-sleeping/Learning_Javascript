@@ -51,3 +51,26 @@ console.log("------------------------------------ ::");
 //  Problem 8: Create a function to check if number is prime
 // Write a function isPrime(num) that returns true if prime, false otherwise
 // Example: isPrime(7) → true, isPrime(8) → false
+
+
+
+console.log("------------------------------------ ::");
+// Problem 9: Find duplicates in an array.
+
+
+console.log("------------------------------------ ::");
+// Problem 10: Find 2nd largest element in array.
+
+
+
+console.log("------------------------------------ ::");
+// Problem 11: Sort an array (without using sort()).
+
+
+console.log("------------------------------------ ::");
+// Problem 12: Find frequency of each character in a string.
+
+
+
+console.log("------------------------------------ ::");
+// Problem 13: Check if two strings are anagrams.

@@ -1,6 +1,4 @@
-//  Problem 1: Check if a year is leap year
-// A year is leap if: divisible by 4, but not by 100, unless also divisible by 400
-// Example: 2024 → true, 1900 → false, 2000 → true
+//  Problem 1: Write a function to calculate factorial.
 
 
 
@@ -51,3 +49,23 @@ console.log("------------------------------------ ::");
 console.log("------------------------------------ ::");
 //  Problem 8: Check if string contains only digits
 // Example: "12345" → true, "123a45" → false
+
+
+
+console.log("------------------------------------ ::");
+// Problem 9: Write a function to check prime number.
+
+
+
+console.log("------------------------------------ ::");
+// Problem 10: Write a function to generate Fibonacci series.
+
+
+
+console.log("------------------------------------ ::");
+// Problem 11: Write a function to find GCD of two numbers.
+
+
+
+console.log("------------------------------------ ::");
+// Problem 12: Write a function to find unique elements in an array.

@@ -28,3 +28,21 @@ console.log("------------------------------------ ::");
 console.log("------------------------------------ ::");
 //  Problem 5: Count vowels in a string
 // Example: "Ayush" → 2 vowels(A, u).
+
+
+
+
+console.log("------------------------------------ ::");
+// Problem 6: Find max & min in an array.
+
+
+
+
+console.log("------------------------------------ ::");
+// Problem 7: Check if a string is palindrome.
+
+
+
+
+console.log("------------------------------------ ::");
+// Problem 8: Merge two arrays without duplicates.

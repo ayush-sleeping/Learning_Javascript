@@ -63,3 +63,51 @@ if (amount > 100) {
 }
 
 console.log("------------------------------------ ::");
+// Problem 6: Find largest of three numbers.
+// Approach : Compare numbers using conditional statements (if-else).
+
+let m = 8;
+let n = 19;
+let o = 10;
+let largest;
+
+if (m >= n && m >= o) {
+    largest = m;
+} else if (n >= m && n >= o) {
+    largest = n;
+} else {
+    largest = o;
+}
+console.log(largest);
+
+
+console.log("------------------------------------ ::");
+// Problem 7: Check if a year is leap year.A year is a leap year if it is "divisible by 4 and not divisible by 100" or "divisible by 400".
+
+let year = 2024;
+
+if ((year % 4 === 0 && year % 100 !== 0) || (year % 400 === 0)) {
+    console.log(year + " is a Leap Year");
+} else {
+    console.log(year + " is Not a Leap Year");
+}
+
+
+console.log("------------------------------------ ::");
+// Problem 8 : Reverse a number using loops.
+// Approach :
+// Initialize a variable reversed = 0.
+// Use a loop to extract the last digit of the number (num % 10).
+// Add it to reversed after multiplying reversed by 10 (reversed = reversed * 10 + lastDigit).
+// Remove the last digit from the number num = (num - lastdigit) / 10 and repeat until num becomes 0.
+// (reverse a number using only basic arithmetic and loops)
+
+let num = 12345;
+let reversed = 0;
+
+while (num > 0) {
+    let lastdigit = num % 10; // get last digit
+    reversed = reversed * 10 + lastdigit; // build reversed number
+    num = (num - lastdigit) / 10; // remove last digit
+}
+console.log("Reversed Number : ", reversed);

@@ -77,6 +77,7 @@
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 📋 Goal: Get crystal clear with basics and build speed.
 📚 Topics to Learn & Practice:
+
 • Arrays (1D, 2D) (3Q must to practice)
 • Strings (Basic operations) (3Q must to practice)
 • Sorting (Bubble, Selection, Insertion) (3Q must to practice)
@@ -86,15 +87,6 @@
 • Conditional Statements (if/else, switch) (3Q must to practice)
 • Loops (for, while, do-while) (3Q must to practice)
 
-⏰ Daily Routine:
-• Practice Daily list of 90Q from Problem Solving Folder and practice solutions save in Random Practice folder .
-    • New questions daily: 5–6
-    • Revision questions daily: 3–4
-• 1–2 hours learning coding new topic
-• 30 min revision of yesterday's topic
-• 2–3 easy problems per topic (LeetCode Easy, HackerRank Warm-up)
-
-🎯 End of Month: Solve 50–70 problems | Take timed quiz for speed check
 
 🚀 SEPTEMBER – Level 2 (Intermediate) + Level 1 Revision
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
