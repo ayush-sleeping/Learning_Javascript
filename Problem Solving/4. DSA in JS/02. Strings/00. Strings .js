@@ -54,6 +54,7 @@ Summary:
 - This will help you implement any string logic when needed
 */
 
+// Example of string manipulation in JavaScript
 const name = "Ayush";
 const repoCount = 28;
 console.log(name + repoCount + " repositories");
@@ -63,3 +64,127 @@ console.log(`My name is ${name} and I have ${repoCount} repositories.`);
 
 
 console.log("------------------------------------ ::");
+
+
+// String object
+const gameName = new String("Chess");
+console.log(gameName); // String object
+console.log(gameName.valueOf()); // "Chess"
+console.log(gameName.toString()); // "Chess"
+console.log(gameName[2]); // "e"
+console.log(gameName.length); // 5
+console.log(gameName.__proto__); // String.prototype
+const newString = gameName.substring(1, 4);
+console.log(newString); // "hes"
+const anotherString = gameName.slice(-8, 4);
+console.log(anotherString); // "Ches"
+
+
+console.log("------------------------------------ ::");
+
+
+// trim :
+const newStringOne = "     chess     ";
+console.log(newStringOne); // "chess"
+console.log(newStringOne.trim()); // "chess"
+
+// replace :
+const newStringTwo = "chess";
+console.log(newStringTwo.replace("chess", "checkers")); // "checkers"
+const url = "https://www.example.com";
+console.log(url.replace("example", "test")); // "https://www.test.com"
+console.log(url.includes("example")); // true
+
+
+console.log("------------------------------------ ::");
+// Manual String Practice (No built-in methods)
+
+
+// 1. Reverse a string manually
+var str = "hello world";
+var reversed = "";
+for (var i = str.length - 1; i >= 0; i--) {
+    reversed = reversed + str[i];
+}
+console.log("Reversed:", reversed); // "dlrow olleh"
+
+
+console.log("-------------- ::");
+
+
+// 2. Count vowels manually
+var s = "Ayush Mishra";
+var vowels = "aeiouAEIOU";
+var vowelCount = 0;
+for (var i = 0; i < s.length; i++) {
+    var ch = s[i];
+    for (var j = 0; j < vowels.length; j++) {
+        if (ch === vowels[j]) {
+            vowelCount = vowelCount + 1;
+            break;
+        }
+    }
+}
+console.log("Vowel count:", vowelCount);
+
+
+console.log("-------------- ::");
+
+
+// 3. Remove spaces manually
+var spaced = "  JavaScript   is   fun  ";
+var noSpaces = "";
+for (var i = 0; i < spaced.length; i++) {
+    if (spaced[i] !== " ") {
+        noSpaces = noSpaces + spaced[i];
+    }
+}
+console.log("No spaces:", noSpaces);
+
+
+console.log("-------------- ::");
+
+
+// 4. Compare two strings manually
+var a = "hello";
+var b = "hello";
+var areEqual = true;
+if (a.length !== b.length) {
+    areEqual = false;
+} else {
+    for (var i = 0; i < a.length; i++) {
+        if (a[i] !== b[i]) {
+            areEqual = false;
+            break;
+        }
+    }
+}
+console.log("Are strings equal?", areEqual);
+
+
+console.log("-------------- ::");
+
+
+// 5. Build substring manually (from index 2 to 5)
+var text = "JavaScript";
+var sub = "";
+for (var i = 2; i < 6; i++) {
+    sub = sub + text[i];
+}
+console.log("Manual substring (2-5):", sub); // "vaSc"
+
+
+console.log("-------------- ::");
+
+
+// 6. Manual concatenation
+var first = "Good ";
+var second = "Morning";
+var combined = "";
+for (var i = 0; i < first.length; i++) {
+    combined = combined + first[i];
+}
+for (var j = 0; j < second.length; j++) {
+    combined = combined + second[j];
+}
+console.log("Manual concatenation:", combined);
