@@ -275,12 +275,165 @@ Explore this repo to learn, revise, and build your frontend development skills �
 
 <p align="right"><a href="#top"><img src="https://img.shields.io/badge/-Back%20to%20Top-blueviolet?style=for-the-badge" /></a></p>
 
+<br>
+
+<br>
+
+<br>
+
+
+
+
 <!-- --------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
 
 
 #
 
-## Data Structures and Algorithms
+## Data Structures and Algorithms in JS
+
+Arrays :
+
+- Definition → The Array object allows you to store multiple values in a single variable.
+- Index-based → Elements are stored in ordered indexes (0-based).
+- Dynamic → Unlike some other languages, JavaScript arrays can store different data types and their size can grow/shrink dynamically.
+- Built-in methods → Provides helpful methods like .push(), .pop(), .map(), .filter(), etc., for common operations.
+<details>
+<summary>📂 Arrays</summary>
+
+| #  | Problem/File Name                           | Link |
+|----|---------------------------------------------|------|
+| 1  | 00. Arrays .js                              | [View](./Problem%20Solving/4.%20DSA%20in%20JS/01.%20Arrays/00.%20Arrays%20.js) |
+| 2  | 01. Two Sum .js                             | [View](./Problem%20Solving/4.%20DSA%20in%20JS/01.%20Arrays/01.%20Two%20Sum%20.js) |
+| 3  | 02. Longest Common Prefix .js               | [View](./Problem%20Solving/4.%20DSA%20in%20JS/01.%20Arrays/02.%20Longest%20Common%20Prefix%20.js) |
+| 4  | 03. Remove Duplicates from Sorted Array.js  | [View](./Problem%20Solving/4.%20DSA%20in%20JS/01.%20Arrays/03.%20Remove%20Dublicates%20from%20sorted%20array.js) |
+| 5  | 04. Search Insert Position .js              | [View](./Problem%20Solving/4.%20DSA%20in%20JS/01.%20Arrays/04.%20Search%20Insert%20Position%20.js) |
+| 6  | 05. Plus One .js                            | [View](./Problem%20Solving/4.%20DSA%20in%20JS/01.%20Arrays/05.%20Plus%20One%20.js) |
+| 7  | 06. Merge Sorted Array .js                  | [View](./Problem%20Solving/4.%20DSA%20in%20JS/01.%20Arrays/06.%20Merge%20Sorted%20Array%20.js) |
+| 8  | 07. Single Number .js                       | [View](./Problem%20Solving/4.%20DSA%20in%20JS/01.%20Arrays/07.%20Single%20Number%20.js) |
+| 9  | 08. Majority Element .js                    | [View](./Problem%20Solving/4.%20DSA%20in%20JS/01.%20Arrays/08.%20Majority%20Element%20.js) |
+
+</details>
+
+<br>
+
+Strings :
+- Definition → A String in JS is used to represent and manipulate a sequence of characters.
+- Immutable → Strings are immutable (once created, they cannot be changed, only replaced).
+- Text Handling → Useful for storing and processing text data (names, messages, etc.).
+- Operations → Common operations include length check, concatenation (+, +=), search (indexOf), extract (substring, slice), etc.
+- Two Ways → Can be created using string literals ("Hello") or the String object (new String("Hello")).
+<details>
+<summary>📂 Strings</summary>
+
+| #  | Problem/File Name                           | Link |
+|----|---------------------------------------------|------|
+| 1  | 00. Strings .js                             | [View](./Problem%20Solving/4.%20DSA%20in%20JS/02.%20Strings/00.%20Strings%20.js) |
+| 2  | 01. Valid Parentheses .js                   | [View](./Problem%20Solving/4.%20DSA%20in%20JS/02.%20Strings/01.%20Valid%20Parentheses%20.js) |
+| 3  | 02. Length of Last Word .js                 | [View](./Problem%20Solving/4.%20DSA%20in%20JS/02.%20Strings/02.%20Length%20of%20Last%20Word%20.js) |
+| 4  | 03. Valid Palindrome .js                    | [View](./Problem%20Solving/4.%20DSA%20in%20JS/02.%20Strings/03.%20Valid%20Palindrome%20.js) |
+| 5  | 04. Add Binary .js                          | [View](./Problem%20Solving/4.%20DSA%20in%20JS/02.%20Strings/04.%20Add%20Binary%20.js) |
+
+</details>
+
+<br>
+
+
+<details>
+<summary>📂 Sorting</summary>
+
+| #  | Problem/File Name               | Link |
+|----|---------------------------------|------|
+| 1  | 01. Merge Two Sorted Lists .js  | [View](./Problem%20Solving/4.%20DSA%20in%20JS/03.%20Sorting/01.%20Merge%20Two%20Sorted%20Lists%20.js) |
+
+</details>
+
+<br>
+
+
+
+
+<details>
+<summary>📂 Searching</summary>
+
+| #  | Problem/File Name                           | Link |
+|----|---------------------------------------------|------|
+| 1  | 01. Same Tree (Breadth First Search).js     | [View](./Problem%20Solving/4.%20DSA%20in%20JS/04.%20Searching/01.%20Same%20Tree%20(Breadth%20First%20Search).js) |
+
+</details>
+
+<br>
+
+
+
+<details>
+<summary>📂 Hashmaps and Hashsets</summary>
+
+| #  | Problem/File Name   | Link |
+|----|---------------------|------|
+| -  | (No files yet)      |      |
+
+</details>
+
+<br>
+
+
+
+<details>
+<summary>📂 Basic Math</summary>
+
+| #  | Problem/File Name              | Link |
+|----|--------------------------------|------|
+| 1  | 01. Palindrome Number .js      | [View](./Problem%20Solving/4.%20DSA%20in%20JS/06.%20Basic%20Math/01.%20Palindrome%20Number%20.js) |
+
+</details>
+
+<br>
+
+
+
+<details>
+<summary>📂 Conditional Statements</summary>
+
+| #  | Problem/File Name   | Link |
+|----|---------------------|------|
+| -  | (No files yet)      |      |
+
+</details>
+
+<br>
+
+
+
+<details>
+<summary>📂 Loops</summary>
+
+| #  | Problem/File Name   | Link |
+|----|---------------------|------|
+| -  | (No files yet)      |      |
+
+</details>
+
+<br>
+
+
+
+<details>
+<summary>📂 Linked List</summary>
+
+| #  | Problem/File Name                             | Link |
+|----|-----------------------------------------------|------|
+| 1  | 01. Remove Duplicates from Sorted List.js     | [View](./Problem%20Solving/4.%20DSA%20in%20JS/Linked%20List%20/01.%20Remove%20Duplicates%20from%20Sorted%20List.js) |
+
+</details>
+
+<br>
+
+
+
+
+
+<Details>
+<Summary>Questions to practice :</Summary>
 
 | Q# | Category | Topic | Problem/Concept | Algorithm Type | Link |
 |----|----------|-------|-----------------|----------------|------|
@@ -315,6 +468,7 @@ Explore this repo to learn, revise, and build your frontend development skills �
 | 29 | **BST** | Range Queries | Floor and Ceil in BST | BST Range Operations | [View](./DSA%20in%20JS/07.%20Binary%20Search%20Trees/02.%20Floor%20and%20Ceil%20in%20BST.js) |
 | 30 | **BST** | Stream Processing | Kth Largest in Stream | Min Heap with Stream | [View](./DSA%20in%20JS/07.%20Binary%20Search%20Trees/03.%20Kth%20Largest%20in%20Stream.js) |
 | 31 | **BST** | Array Processing | Kth Largest in Array | QuickSelect/Heap Sort | [View](./DSA%20in%20JS/07.%20Binary%20Search%20Trees/04.%20Kth%20Largest%20in%20Array.js) |
+</Details>
 
 <br>
 

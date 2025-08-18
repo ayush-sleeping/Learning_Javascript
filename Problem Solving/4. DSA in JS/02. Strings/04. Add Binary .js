@@ -12,6 +12,14 @@ Output: "10101"
 
 */
 
+// Approach :
+// - Start from the rightmost digit of both strings.
+// - Add the digits and any carry.
+// - If the sum is 2 or more, set carry to 1 and put the correct digit in the result.
+// - Continue until both strings are processed.
+// - If there's a carry left at the end, add it to the result.
+// - Build the result from right to left.
+
 /**
  * @param {string} a
  * @param {string} b
