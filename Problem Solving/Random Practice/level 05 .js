@@ -74,3 +74,10 @@ console.log("------------------------------------ ::");
 
 console.log("------------------------------------ ::");
 // Problem 13: Check if two strings are anagrams.
+
+
+// Problem 14: Create a function to remove vowels from a string.
+// Problem 15: Create a function to flatten a nested array.
+// Problem 16: Create a function to capitalize the first letter of each word in a string.
+// Problem 17: Create a function to rotate an array by k positions.
+// Problem 18: Create a function to find the longest word in a string.

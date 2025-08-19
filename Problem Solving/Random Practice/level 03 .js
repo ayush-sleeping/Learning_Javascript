@@ -46,3 +46,11 @@ console.log("------------------------------------ ::");
 
 console.log("------------------------------------ ::");
 // Problem 8: Merge two arrays without duplicates.
+
+
+
+// Problem 9: Find the frequency of a given element in an array.
+// Problem 10: Remove all spaces from a string.
+// Problem 11: Find the second largest number in an array.
+// Problem 12: Find the intersection of two arrays.
+// Problem 13: Find the sum of all odd numbers in an array.

@@ -111,3 +111,11 @@ while (num > 0) {
     num = (num - lastdigit) / 10; // remove last digit
 }
 console.log("Reversed Number : ", reversed);
+
+
+
+// Problem 9: Find the factorial of a number using a loop.
+// Problem 10: Print multiplication table for any number.
+// Problem 11: Find the sum of digits of a number.
+// Problem 12: Count the number of digits in a number.
+// Problem 13: Find the average of numbers in an array.

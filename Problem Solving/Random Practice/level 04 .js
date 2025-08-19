@@ -69,3 +69,10 @@ console.log("------------------------------------ ::");
 
 console.log("------------------------------------ ::");
 // Problem 12: Write a function to find unique elements in an array.
+
+
+// Problem 13: Find the largest word in a sentence.
+// Problem 14: Find the reverse of an array.
+// Problem 15: Find the sum of all prime numbers up to N.
+// Problem 16: Find the missing number in an array from 1 to N.
+// Problem 17: Find the longest palindrome in a string.
