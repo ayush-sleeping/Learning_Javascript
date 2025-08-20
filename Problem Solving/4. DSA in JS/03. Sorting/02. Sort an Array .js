@@ -71,3 +71,63 @@ nums =
 
 only starting 2 simple test cases passed.
 */
+
+// lets use the mergesort :
+function sortArrayMerge(nums) {
+
+    // If array has 0 or 1 element, it's already sorted
+    if (nums.length <= 1) return nums;
+
+    // integer division for mid (no Math.floor)
+    // mid = (length is even) -> length/2; (odd) -> (length-1)/2
+    var mid = 0;
+    var len = nums.length;
+    if (len % 2 === 0) {
+        mid = len / 2;
+    } else {
+        mid = (len - 1) / 2;
+    }
+
+    // Copy left half
+    var left = [];
+    for (var i = 0; i < mid; i++) {
+        left[left.length] = nums[i];
+    }
+    // Copy right half
+    var right = [];
+    for (var i = mid; i < nums.length; i++) {
+        right[right.length] = nums[i];
+    }
+
+    var sortedLeft = sortArrayMerge(left);
+    var sortedRight = sortArrayMerge(right);
+
+    return mergeManual(sortedLeft, sortedRight);
+}
+
+function mergeManual(left, right) {
+    var sortedArr = [];
+    var i = 0, j = 0;
+    while (i < left.length && j < right.length) {
+        if (left[i] < right[j]) {
+            sortedArr[sortedArr.length] = left[i];
+            i++;
+        } else {
+            sortedArr[sortedArr.length] = right[j];
+            j++;
+        }
+    }
+    // Add remaining elements from left
+    while (i < left.length) {
+        sortedArr[sortedArr.length] = left[i];
+        i++;
+    }
+    // Add remaining elements from right
+    while (j < right.length) {
+        sortedArr[sortedArr.length] = right[j];
+        j++;
+    }
+    return sortedArr;
+}
+
+console.log(sortArrayMerge([29, 10, 14, 37, 14])); // Output: [1, 2, 3, 4, 5, 6, 7, 8]

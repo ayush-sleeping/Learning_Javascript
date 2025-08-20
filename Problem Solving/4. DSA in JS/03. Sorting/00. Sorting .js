@@ -334,3 +334,7 @@ function mergeManual(left, right) {
 }
 
 console.log(mergeSortManual([8, 3, 5, 4, 7, 6, 1, 2])); // Output: [1, 2, 3, 4, 5, 6, 7, 8]
+
+
+
+console.log("-------------------------------------------- ::");
