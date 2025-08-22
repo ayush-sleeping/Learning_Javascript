@@ -78,37 +78,33 @@
 📋 Goal: Get crystal clear with basics and build speed.
 📚 Topics to Learn & Practice:
 
+• Conditional Statements (if/else, switch) (3Q must to practice)
+• Loops (for, while, do-while) (3Q must to practice)
 • Arrays (1D, 2D) (3Q must to practice)
 • Strings (Basic operations) (3Q must to practice)
 • Sorting (Bubble, Selection, Insertion) (3Q must to practice)
 • Searching (Linear, Binary) (3Q must to practice)
-• Hashmaps/HashSets (Basics) (3Q must to practice)
 • Basic Math (GCD, LCM, Prime) (3Q must to practice)
-• Conditional Statements (if/else, switch) (3Q must to practice)
-• Loops (for, while, do-while) (3Q must to practice)
+• Hashmaps/HashSets (Basics) (3Q must to practice)
 
 
 🚀 SEPTEMBER – Level 2 (Intermediate) + Level 1 Revision
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 📋 Goal: Learn intermediate problem-solving while keeping Level 1 sharp.
 📚 Topics to Learn & Practice:
+
 • Recursion (Basic)
-• Backtracking (N-Queens, Rat in Maze)
 • Stack (Implementation + problems)
 • Queue (Implementation + problems)
 • Linked List (Singly, Doubly, Circular)
 • Advanced Sorting (Merge, Quick, Counting)
-• Two-Pointer Technique • Sliding Window
+• Two-Pointer Technique
+• Sliding Window
 • Prefix Sum/Difference Array
+• Backtracking (N-Queens, Rat in Maze)
 • Bit Manipulation (Basics)
 • Basic Greedy Algorithms
 
-⏰ Daily Routine:
-• Learn new Level 2 topic (1–2 hrs)
-• Solve 2 Level 2 problems + 1 Level 1 problem
-• Weekly: 1 mixed mock test (Level 1 + Level 2)
-
-🎯 End of Month: Solve 80–100 problems (mix of Level 1 & 2)
 
 ⚡ OCTOBER – Level 3 (Advanced) + Levels 2 & 1 Revision
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
@@ -125,12 +121,6 @@
 • Floyd-Warshall
 • Advanced Greedy (Huffman, Activity Selection)
 
-⏰ Daily Routine:
-• Learn new Level 3 topic (1–2 hrs)
-• Solve 2 Level 3 + 1 Level 2 + 1 Level 1 problems
-• Weekly: 1 timed mixed set (Level 3 + 2 + 1)
-
-🎯 End of Month: Solve 80–100 problems (mix of all three levels)
 
 🔥 NOVEMBER – Level 4 (Expert) + Levels 3, 2 & 1 Revision
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
@@ -145,12 +135,6 @@
 • Computational Geometry
 • Advanced Math (Sieve, Modular Arithmetic)
 
-⏰ Daily Routine:
-• Learn new Level 4 topic (1–2 hrs)
-• Solve 2 Level 4 + 1 Level 3 + 1 Level 2 + 1 Level 1 problems
-• Weekly: Mixed mock (all levels)
-
-🎯 End of Month: Solve 80–100 problems (all levels mixed)
 
 🏆 DECEMBER – Full Mixed Revision & Mock Interviews
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
