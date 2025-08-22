@@ -32,6 +32,7 @@ Complexities (Important for Interviews):
 - Insertion Sort → O(n²) worst, O(n) best (nearly sorted)
 - Merge Sort → O(n log n) always
 - Quick Sort → O(n log n) average, O(n²) worst (but rare)
+- Heap Sort → O(n log n) always
 - Counting/Radix/Bucket → Linear time in special cases
 
 Key Notes:
@@ -420,3 +421,163 @@ function partition(arr, low, high) {
 var arr = [8, 3, 5, 4, 7, 6, 1, 2];
 quickSort(arr, 0, arr.length - 1);
 console.log(arr); // Output: [1, 2, 3, 4, 5, 6, 7, 8]
+
+
+
+console.log("-------------------------------------------- ::");
+/*
+How Heap Sort works?
+- Example: [8, 3, 5, 4, 7, 6, 1, 2]
+- Build a max heap from the array (largest value at the root).
+- Swap the root (largest) with the last element.
+- Reduce the heap size by one and heapify the root again.
+- Repeat until the heap size is 1.
+- The array is sorted in ascending order.
+
+Heap Sort Algorithm (with comments):
+
+function heapSort(arr) {
+    var n = arr.length;
+
+    // Step 1: Build max heap
+    for (var i = Math.floor(n / 2) - 1; i >= 0; i--) {
+        heapify(arr, n, i);
+    }
+
+    // Step 2: Extract elements from heap one by one
+    for (var i = n - 1; i > 0; i--) {
+        // Swap root (max) with last element
+        var temp = arr[0];
+        arr[0] = arr[i];
+        arr[i] = temp;
+
+        // Heapify reduced heap
+        heapify(arr, i, 0);
+    }
+}
+
+// Heapify subtree rooted at index i, size n
+function heapify(arr, n, i) {
+    var largest = i; // Initialize largest as root
+    var left = 2 * i + 1;
+    var right = 2 * i + 2;
+
+    // If left child is larger than root
+    if (left < n && arr[left] > arr[largest]) {
+        largest = left;
+    }
+
+    // If right child is larger than largest so far
+    if (right < n && arr[right] > arr[largest]) {
+        largest = right;
+    }
+
+    // If largest is not root
+    if (largest !== i) {
+        var temp = arr[i];
+        arr[i] = arr[largest];
+        arr[largest] = temp;
+
+        // Recursively heapify the affected subtree
+        heapify(arr, n, largest);
+    }
+}
+
+// Usage example:
+var arr = [8, 3, 5, 4, 7, 6, 1, 2];
+heapSort(arr);
+console.log(arr); // Output: [1, 2, 3, 4, 5, 6, 7, 8]
+*/
+
+// Q.6 : Implement Heap Sort in JavaScript
+// Write a function to sort the given array nums in ascending order.
+// Input: nums = [8, 3, 5, 4, 7, 6, 1, 2] ---->>>> Output: [1, 2, 3, 4, 5, 6, 7, 8]
+
+function heapSort(arr) {
+    var n = arr.length;
+
+    // Build max heap
+    for (var i = Math.floor(n / 2) - 1; i >= 0; i--) {
+        heapify(arr, n, i);
+    }
+
+    // Extract elements from heap
+    for (var i = n - 1; i > 0; i--) {
+        var temp = arr[0];
+        arr[0] = arr[i];
+        arr[i] = temp;
+
+        heapify(arr, i, 0);
+    }
+}
+
+function heapify(arr, n, i) {
+    var largest = i;
+    var left = 2 * i + 1;
+    var right = 2 * i + 2;
+
+    if (left < n && arr[left] > arr[largest]) {
+        largest = left;
+    }
+    if (right < n && arr[right] > arr[largest]) {
+        largest = right;
+    }
+    if (largest !== i) {
+        var temp = arr[i];
+        arr[i] = arr[largest];
+        arr[largest] = temp;
+        heapify(arr, n, largest);
+    }
+}
+
+// Usage example:
+var arr = [8, 3, 5, 4, 7, 6, 1, 2];
+heapSort(arr);
+console.log(arr); // Output: [1, 2, 3, 4, 5, 6, 7, 8]
+
+
+
+console.log("-------------------------------------------- ::");
+/*
+How Counting/Radix/Bucket Sort works?
+
+1. Counting Sort:
+- Works for integers in a fixed, small range (e.g., 0 to 100).
+- Counts how many times each value appears.
+- Places each value in the output array according to its count.
+- Not comparison-based, so it can be faster than O(n log n) for small ranges.
+- Stable and efficient for small integer ranges.
+Counting Sort Algorithm:
+1. Find the maximum value in the array.
+2. Create a count array of size (max + 1), initialized to 0.
+3. For each number in the input array, increment its count in the count array.
+4. Build the sorted output by placing each number according to its count.
+
+
+
+2. Radix Sort:
+- Works for numbers (integers, sometimes strings).
+- Sorts numbers digit by digit (from least significant to most significant).
+- Uses a stable sort (like counting sort) for each digit.
+- Efficient for large numbers with limited digits.
+Radix Sort Algorithm:
+1. Find the maximum number to know the number of digits.
+2. For each digit (from least significant to most significant):
+   a. Use a stable sort (like counting sort) to sort numbers by the current digit.
+   b. Repeat for all digit places.
+3. The array is sorted after processing all digits.
+
+
+
+3. Bucket Sort:
+- Works best when input is uniformly distributed over a range.
+- Divides the input into several buckets.
+- Sorts each bucket individually (often with another sort).
+- Concatenates all buckets for the final sorted array.
+Bucket Sort Algorithm:
+1. Create several empty buckets (arrays).
+2. Distribute the input numbers into buckets based on their value/range.
+3. Sort each bucket individually (often using another sorting algorithm).
+4. Concatenate all buckets to get the final sorted array.
+
+*/

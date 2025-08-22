@@ -291,6 +291,58 @@ Explore this repo to learn, revise, and build your frontend development skills �
 
 ## Data Structures and Algorithms in JS
 
+<!---------------------------------------------------------------- :: -->
+<!---------------------------------------------------------------- :: -->
+Conditional Statements :
+- Conditional statements let you run different code based on certain conditions.
+- They are the foundation of decision-making in programming.
+
+Subtopics:
+1. if statement
+2. if-else statement
+3. else-if ladder
+4. switch statement
+5. Nested conditionals
+6. Ternary operator (for simple conditions)
+
+<details>
+<summary>📂 Conditional Statements</summary>
+
+| #  | Problem/File Name   | Link |
+|----|---------------------|------|
+| -  | (No files yet)      |      |
+
+</details>
+
+<br>
+
+
+
+<!---------------------------------------------------------------- :: -->
+<!---------------------------------------------------------------- :: -->
+Loops :
+- Loops let you repeat a block of code multiple times.
+- They are essential for iterating over arrays, processing data, and solving DSA problems.
+
+Subtopics:
+1. for loop
+2. while loop
+3. do-while loop
+4. for...of loop (for arrays)
+5. for...in loop (for objects)
+<details>
+<summary>📂 Loops</summary>
+
+| #  | Problem/File Name   | Link |
+|----|---------------------|------|
+| -  | (No files yet)      |      |
+
+</details>
+
+<br>
+
+<!---------------------------------------------------------------- :: -->
+<!---------------------------------------------------------------- :: -->
 Arrays :
 
 - Definition → The Array object allows you to store multiple values in a single variable.
@@ -316,6 +368,8 @@ Arrays :
 
 <br>
 
+<!---------------------------------------------------------------- :: -->
+<!---------------------------------------------------------------- :: -->
 Strings :
 - Definition → A String in JS is used to represent and manipulate a sequence of characters.
 - Immutable → Strings are immutable (once created, they cannot be changed, only replaced).
@@ -338,6 +392,8 @@ Strings :
 <br>
 
 
+<!---------------------------------------------------------------- :: -->
+<!---------------------------------------------------------------- :: -->
 <details>
 <summary>📂 Sorting</summary>
 
@@ -352,6 +408,8 @@ Strings :
 
 
 
+<!---------------------------------------------------------------- :: -->
+<!---------------------------------------------------------------- :: -->
 <details>
 <summary>📂 Searching</summary>
 
@@ -365,19 +423,8 @@ Strings :
 
 
 
-<details>
-<summary>📂 Hashmaps and Hashsets</summary>
-
-| #  | Problem/File Name   | Link |
-|----|---------------------|------|
-| -  | (No files yet)      |      |
-
-</details>
-
-<br>
-
-
-
+<!---------------------------------------------------------------- :: -->
+<!---------------------------------------------------------------- :: -->
 <details>
 <summary>📂 Basic Math</summary>
 
@@ -390,9 +437,10 @@ Strings :
 <br>
 
 
-
+<!---------------------------------------------------------------- :: -->
+<!---------------------------------------------------------------- :: -->
 <details>
-<summary>📂 Conditional Statements</summary>
+<summary>📂 Hashmaps and Hashsets</summary>
 
 | #  | Problem/File Name   | Link |
 |----|---------------------|------|
@@ -403,20 +451,8 @@ Strings :
 <br>
 
 
-
-<details>
-<summary>📂 Loops</summary>
-
-| #  | Problem/File Name   | Link |
-|----|---------------------|------|
-| -  | (No files yet)      |      |
-
-</details>
-
-<br>
-
-
-
+<!---------------------------------------------------------------- :: -->
+<!---------------------------------------------------------------- :: -->
 <details>
 <summary>📂 Linked List</summary>
 
@@ -429,9 +465,8 @@ Strings :
 <br>
 
 
-
-
-
+<!---------------------------------------------------------------- :: -->
+<!---------------------------------------------------------------- :: -->
 <Details>
 <Summary>Questions to practice :</Summary>
 
