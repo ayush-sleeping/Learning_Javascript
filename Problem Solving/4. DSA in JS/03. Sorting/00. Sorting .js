@@ -338,3 +338,85 @@ console.log(mergeSortManual([8, 3, 5, 4, 7, 6, 1, 2])); // Output: [1, 2, 3, 4, 
 
 
 console.log("-------------------------------------------- ::");
+/*
+How Quick Sort works?
+- Example: [8, 3, 5, 4, 7, 6, 1, 2]
+- Pick a "pivot" element (commonly the last element).
+- Partition the array so that:
+    - All elements less than the pivot go to the left.
+    - All elements greater than the pivot go to the right.
+- Recursively apply the same process to the left and right subarrays.
+- Combine the sorted left part, pivot, and sorted right part for the final sorted array.
+
+Quick Sort Algorithm (with comments):
+
+function quickSort(arr, low, high) {
+    if (low < high) {
+        // Partition the array and get the pivot index
+        let pi = partition(arr, low, high);
+
+        // Recursively sort elements before and after partition
+        quickSort(arr, low, pi - 1);
+        quickSort(arr, pi + 1, high);
+    }
+}
+
+function partition(arr, low, high) {
+    let pivot = arr[high]; // Choose the last element as pivot
+    let i = low - 1; // Index of smaller element
+
+    for (let j = low; j < high; j++) {
+        if (arr[j] < pivot) {
+            i++;
+            // Swap arr[i] and arr[j]
+            let temp = arr[i];
+            arr[i] = arr[j];
+            arr[j] = temp;
+        }
+    }
+    // Swap arr[i+1] and arr[high] (pivot)
+    let temp = arr[i + 1];
+    arr[i + 1] = arr[high];
+    arr[high] = temp;
+    return i + 1; // Return the partition index
+}
+
+// Usage example:
+let arr = [8, 3, 5, 4, 7, 6, 1, 2];
+quickSort(arr, 0, arr.length - 1);
+console.log(arr); // Output: [1, 2, 3, 4, 5, 6, 7, 8]
+*/
+
+// Q.5 : Implement Quick Sort in JavaScript
+// Write a function to sort the given array nums in ascending order.
+// Input: nums = [8, 3, 5, 4, 7, 6, 1, 2] ---->>>> Output: [1, 2, 3, 4, 5, 6, 7, 8]
+
+function quickSort(arr, low, high) {
+    if (low < high) {
+        var pi = partition(arr, low, high);
+        quickSort(arr, low, pi - 1);
+        quickSort(arr, pi + 1, high);
+    }
+}
+
+function partition(arr, low, high) {
+    var pivot = arr[high];
+    var i = low - 1;
+    for (var j = low; j < high; j++) {
+        if (arr[j] < pivot) {
+            i++;
+            var temp = arr[i];
+            arr[i] = arr[j];
+            arr[j] = temp;
+        }
+    }
+    var temp = arr[i + 1];
+    arr[i + 1] = arr[high];
+    arr[high] = temp;
+    return i + 1;
+}
+
+// Creating the array and calling quickSort on it, then printing the array itself.
+var arr = [8, 3, 5, 4, 7, 6, 1, 2];
+quickSort(arr, 0, arr.length - 1);
+console.log(arr); // Output: [1, 2, 3, 4, 5, 6, 7, 8]

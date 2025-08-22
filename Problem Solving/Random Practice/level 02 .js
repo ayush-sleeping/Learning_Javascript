@@ -114,8 +114,88 @@ console.log("Reversed Number : ", reversed);
 
 
 
+
+console.log("------------------------------------ ::");
 // Problem 9: Find the factorial of a number using a loop.
+// Approach:
+// - Factorial of n (n!) means multiplying all numbers from 1 to n.
+// - Example: 5! = 5 * 4 * 3 * 2 * 1 = 120
+// - Use a loop to multiply numbers from 1 up to n.
+
+let factNum = 5;
+let fact = 1; // Start with 1 (since multiplying by 0 gives 0)
+
+for (let i = 1; i <= factNum; i++) {
+    fact = fact * i; // Multiply current factorial by i
+    // console.log(fact);
+}
+console.log(fact);
+
+
+console.log("------------------------------------ ::");
 // Problem 10: Print multiplication table for any number.
+// Approach:
+// - Take a number (e.g., 7).
+// - Use a loop to multiply the number by 1 to 10.
+// - Print each result in the format: "number x i = result"
+let mulNum = 7;
+for (let i = 1; i <= 10; i++) {
+    let result = mulNum * i;
+    console.log(mulNum + " x " + i + " = " + result);
+}
+
+
+console.log("------------------------------------ ::");
 // Problem 11: Find the sum of digits of a number.
+// Approach:
+// - Take a number (e.g., 12345).
+// - Use a loop to extract each digit (num % 10).
+// - Add each digit to a sum variable.
+// - Remove the last digit (num = (num - lastDigit) / 10) and repeat until num becomes 0.
+
+let sumNum = 345;
+let sum = 0;
+
+while (sumNum > 0) {
+    let lastDigitNum = sumNum % 10;
+    sum = sum + lastDigitNum;
+    sumNum = (sumNum - lastDigitNum) / 10;
+}
+console.log(sum);
+
+
+console.log("------------------------------------ ::");
 // Problem 12: Count the number of digits in a number.
+// Approach:
+// - Take a number (e.g., 12345).
+// - Use a loop to repeatedly remove the last digit (num = (num - lastDigit) / 10).
+// - For each step, increase a counter.
+// - Stop when the number becomes 0.
+
+let digitNum = 345;
+let count = 0;
+
+while (digitNum > 0) {
+    let lastdigitX = digitNum % 10;
+    digitNum = (digitNum - lastdigitX) / 10;
+    count = count + 1;
+}
+console.log(count);
+
+
+console.log("------------------------------------ ::");
 // Problem 13: Find the average of numbers in an array.
+// Approach:
+// - Take an array of numbers (e.g., [2, 4, 6, 8, 10]).
+// - Use a loop to add up all the numbers (sum).
+// - Divide the sum by the number of elements (length) to get the average.
+
+let arr = [2, 4, 6, 8];
+let sumArr = 0;
+
+for (let i = 0; i < arr.length; i++) {
+    sumArr = sumArr + arr[i];
+}
+// console.log(sumArr);
+let average = sumArr / arr.length;
+console.log(average);
