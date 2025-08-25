@@ -50,7 +50,27 @@ console.log("------------------------------------ ::");
 
 
 // Problem 9: Find the frequency of a given element in an array.
+
+
+
+
+console.log("------------------------------------ ::");
 // Problem 10: Remove all spaces from a string.
+
+
+
+
+console.log("------------------------------------ ::");
 // Problem 11: Find the second largest number in an array.
+
+
+
+
+console.log("------------------------------------ ::");
 // Problem 12: Find the intersection of two arrays.
+
+
+
+
+console.log("------------------------------------ ::");
 // Problem 13: Find the sum of all odd numbers in an array.
