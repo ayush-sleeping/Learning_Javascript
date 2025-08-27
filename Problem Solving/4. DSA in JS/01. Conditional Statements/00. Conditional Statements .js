@@ -51,12 +51,14 @@ Subtopics & When to Use:
 
 let num = 10;
 
-// if
+// 1. if
+// ------------------------------------------------ ::
 if (num > 5) {
     console.log("Number is greater than 5");
 }
 
 // 2. if-else statement
+// ------------------------------------------------ ::
 if (num % 2 === 0) {
     console.log("Number is even");
 } else {
@@ -64,6 +66,7 @@ if (num % 2 === 0) {
 }
 
 // 3. else-if ladder
+// ------------------------------------------------ ::
 if (num < 0) {
     console.log("Negative");
 } else if (num === 0) {
@@ -73,6 +76,7 @@ if (num < 0) {
 }
 
 // 4. switch statement
+// ------------------------------------------------ ::
 let day = 3;
 switch (day) {
     case 1:
@@ -89,6 +93,7 @@ switch (day) {
 }
 
 // 5. Nested conditionals
+// ------------------------------------------------ ::
 let age = 20;
 if (age >= 18) {
     if (age < 60) {
@@ -101,6 +106,7 @@ if (age >= 18) {
 }
 
 // 6. Ternary operator
+// ------------------------------------------------ ::
 let result = (num > 0) ? "Positive" : "Not positive";
 console.log(result);
 

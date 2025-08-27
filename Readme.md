@@ -394,6 +394,20 @@ Strings :
 
 <!---------------------------------------------------------------- :: -->
 <!---------------------------------------------------------------- :: -->
+Sorting :
+- Sorting is the process of arranging elements of a dataset in a particular order
+  (Ascending or Descending).
+- Makes searching faster (Binary Search requires sorted data).
+- Helps in efficient storage, retrieval, and data analysis.
+- Used in many real-world applications (ranking, leaderboards, databases, etc.).
+
+
+Key Notes:
+- Stable Sort: Keeps relative order of equal elements (e.g., Merge Sort, Insertion Sort).
+- In-Place Sort: Requires little extra memory (e.g., Quick Sort, Heap Sort).
+- Comparison-based vs Non-comparison-based sorting:
+  - Comparison: Bubble, Merge, Quick, Heap
+  - Non-comparison: Counting, Radix, Bucket
 <details>
 <summary>📂 Sorting</summary>
 

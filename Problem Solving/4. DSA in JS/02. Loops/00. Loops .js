@@ -42,11 +42,13 @@ When to use each loop?
 
 
 // 1. for loop
+// ------------------------------------------------ ::
 for (let i = 1; i <= 5; i++) {
     console.log("for loop:", i);
 }
 
 // 2. while loop
+// ------------------------------------------------ ::
 let j = 1;
 while (j <= 5) {
     console.log("while loop:", j);
@@ -54,6 +56,7 @@ while (j <= 5) {
 }
 
 // 3. do-while loop
+// ------------------------------------------------ ::
 let k = 1;
 do {
     console.log("do-while loop:", k);
@@ -61,12 +64,14 @@ do {
 } while (k <= 5);
 
 // 4. for...of loop (arrays)
+// ------------------------------------------------ ::
 const arr = [10, 20, 30, 40];
 for (const value of arr) {
     console.log("for...of loop:", value);
 }
 
 // 5. for...in loop (objects)
+// ------------------------------------------------ ::
 const obj = { a: 1, b: 2, c: 3 };
 for (const key in obj) {
     console.log("for...in loop:", key, obj[key]);

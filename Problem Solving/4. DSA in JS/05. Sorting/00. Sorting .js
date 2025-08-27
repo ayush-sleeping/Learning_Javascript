@@ -26,7 +26,7 @@ Types of Sorting Algorithms:
    - Radix Sort (digit by digit sorting)
    - Bucket Sort (works when input is uniformly distributed)
 
-Complexities (Important for Interviews):
+Complexities :
 - Bubble Sort → O(n²) worst, O(n) best (already sorted)
 - Selection Sort → O(n²) always
 - Insertion Sort → O(n²) worst, O(n) best (nearly sorted)
