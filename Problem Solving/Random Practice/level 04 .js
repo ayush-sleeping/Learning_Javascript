@@ -1,3 +1,26 @@
+// ------------------------:: Revision and Practice the ESSENTIAL ::------------------------
+//  Problem 1: Write a function to calculate factorial.
+//  Problem 2: Calculate simple interest using function
+//  Problem 3: Count words in a sentence
+//  Problem 4: Find sum of digits of a number using a function
+//  Problem 5: Check if number is Armstrong number
+//  Problem 6: Print pattern of stars using a function
+//  Problem 7: Check if string contains only digits
+// Problem 8: Write a function to check prime number.
+// Problem 9: Write a function to generate Fibonacci series.
+// Problem 10: Write a function to find GCD of two numbers.
+// Problem 11: Write a function to find unique elements in an array.
+// Problem 12: Find the largest word in a sentence.
+// Problem 13: Find the reverse of an array.
+// Problem 14: Find the sum of all prime numbers up to N.
+// Problem 15: Find the missing number in an array from 1 to N.
+// Problem 16: Find the longest palindrome in a string.
+// ------------------------ :: ----------------------------------- :: -----------------------
+
+
+
+
+
 //  Problem 1: Write a function to calculate factorial.
 // Approach (step-wise):
 // Contract:
@@ -355,40 +378,455 @@ console.log(containsOnlyDigits("123a45"));  // false
 console.log("------------------------------------ ::");
 // Problem 8: Write a function to check prime number.
 
+// - Input: num (expected a positive integer >= 2).
+// - Output: true if prime, false otherwise. Returns null for invalid input.
+// - Error modes: if num is not a number, not an integer, or < 2, return null with a message.
+
+// Approach (step-wise):
+// 1. Validate input: check type, integer-ness, and >= 2.
+// 2. Handle edge cases: 2 is prime, 1 is not prime.
+// 3. For num >= 3, check divisibility by numbers from 2 to num/2 (no need to go higher).
+//    - If any divisor found, return false.
+// 4. If no divisors found, return true.
+// 5. Edge cases: negative → invalid, 0/1 → not prime.
+
+function isPrime(num) {
+    // validate
+    if (typeof num !== 'number' || num % 1 !== 0 || num < 2) {
+        console.log("Invalid input");
+        return null;
+    }
+    // 2 is the smallest prime
+    if (num === 2) {
+        return true;
+    }
+    // Check for even numbers > 2 (not prime)
+    if (num % 2 === 0) {
+        return false;
+    }
+
+    // Check divisibility from 3 to num/2, stepping by 2 (skip evens)
+    // We start from 3 because:
+    // - We already checked if num is even (divisible by 2) earlier.
+    // - So, we only need to check odd numbers now (3, 5, 7, etc.).
+    // We go up to num / 2 because:
+    // - If num has a divisor larger than num/2, the other divisor would be smaller than 2.
+    // - But the smallest divisor is 2, so no need to check beyond num/2.
+    // Stepping by 2 (i = i + 2) means we only check odd numbers, skipping evens.
+    for (var i = 3; i <= num / 2; i = i + 2) {
+        // Check if num is divisible by i (no remainder when divided)
+        if (num % i === 0) {
+            // If yes, num has a divisor other than 1 and itself, so it's not prime
+            return false; // found a divisor
+        }
+        // If not, continue to the next odd number
+    }
+    return true; // no divisors found
+}
+console.log(isPrime(2));   // true
+console.log(isPrime(3));   // true
+console.log(isPrime(4));   // false
+
+
 
 
 console.log("------------------------------------ ::");
 // Problem 9: Write a function to generate Fibonacci series.
+
+// - Input: n (expected a positive integer, number of terms).
+// - Output: array of first n Fibonacci numbers. Returns null for invalid input.
+// - Error modes: if n is not a number, not an integer, or <= 0, return null with a message.
+
+// Approach (step-wise):
+// 1. Validate input: check type, integer-ness, and positivity.
+// 2. If n === 1, return [0].
+// 3. If n === 2, return [0, 1].
+// 4. For n > 2, initialize array with [0, 1].
+// 5. Loop from index 2 to n-1:
+//    a. Next number = array[i-1] + array[i-2].
+//    b. Push next number to array.
+// 6. Return the array.
+// 7. Edge cases: n=0 → invalid, negative → invalid.
+
+function generateFibonacci(n) {
+    // validate
+    if (typeof n !== 'number' || n % 1 !== 0 || n <= 0) {
+        console.log("Invalid Input");
+        return null;
+    }
+    // Handle small n
+    if (n === 1) {
+        return [0];
+    }
+    if (n === 2) {
+        return [0, 1];
+    }
+
+    // Initialize array with first two numbers
+    var fib = [0, 1];
+
+    // Generate remaining terms
+    for (var i = 2; i < n; i++) {
+        var next = fib[i - 1] + fib[i - 2]; // Sum of last two
+        fib[i] = next; // Add to array
+    }
+
+    return fib;
+}
+console.log(generateFibonacci(5)); // [0, 1, 1, 2, 3]
+console.log(generateFibonacci(1)); // [0]
+
 
 
 
 console.log("------------------------------------ ::");
 // Problem 10: Write a function to find GCD of two numbers.
 
+// - Input: a, b (expected positive integers).
+// - Output: GCD of a and b (largest number that divides both). Returns null for invalid input.
+// - Error modes: if a or b is not a number, not an integer, or <= 0, return null with a message.
+
+// Approach (step-wise):
+// 1. Validate inputs: check type, integer-ness, and positivity for both a and b.
+// 2. Use the basic Euclidean algorithm (manual, no recursion):
+//    a. While b is not zero:
+//        - temp = b
+//        - b = a % b
+//        - a = temp
+//    b. When b becomes zero, a is the GCD.
+// 3. Return a as the result.
+
+function findGCD(a, b) {
+    // validate
+    if (typeof a !== 'number' || typeof b !== 'number' || a % 1 !== 0 || b % 1 !== 0 || a <= 0 || b <= 0) {
+        console.log("Invalid Input");
+        return null;
+    }
+
+    // Loop to find GCD using Euclidean algorithm
+    while (b !== 0) {
+        var temp = b; // Store current value of b in temp
+        b = a % b;  // Update b to be the remainder of a divided by b
+        a = temp; // Set a to the previous value of b (from temp), This moves the smaller number up for the next iteration
+        // Repeat until b becomes 0
+    }
+    return a;  // When b is 0, a holds the GCD of the original two numbers
+}
+console.log(findGCD(12, 18)); // 6
+console.log(findGCD(100, 25)); // 25
+
+
 
 
 console.log("------------------------------------ ::");
 // Problem 11: Write a function to find unique elements in an array.
 
+// Approach (step-wise):
+//   - Input: arr (expected an array of numbers or strings)
+//   - Output: a new array containing only the unique elements (no duplicates)
+//   - Error modes: if arr is not an array or is empty, return [] and print a message
+//
+// Steps to implement:
+//   1. Validate input: check if arr is an array and has at least one element
+//   2. Create a new array to store unique elements (uniqueArr)
+//   3. For each element in arr:
+//        a. Assume it's unique (set isUnique = true)
+//        b. Loop through uniqueArr to check if the element already exists
+//        c. If found, set isUnique = false and break out of the loop
+//        d. If isUnique is still true, add the element to uniqueArr
+//   4. Return uniqueArr
 
-// Problem 12: Find the largest word in a sentence.
+function findUniqueElements(arr) {
+    // validate
+    if (!arr || typeof arr.length !== 'number') {
+        console.log("Invalid Inputs");
+        return [];
+    }
+    if (arr.length === 0) {
+        return [];
+    }
+
+    // Create array to store unique elements
+    var uniqueArr = [];
+
+    // Loop through each element in arr
+    for (var i = 0; i < arr.length; i++) {
+        var current = arr[i];
+        var isUnique = true; // Assume current element is unique
+
+        // Check if current exists in uniqueArr
+        for (var j = 0; j < uniqueArr.length; j++) {
+            if (uniqueArr[j] === current) {
+                isUnique = false; // Found duplicate
+                break; // No need to check further
+            }
+        }
+
+        // If still unique, add to uniqueArr
+        if (isUnique) {
+            uniqueArr[uniqueArr.length] = current;
+        }
+    }
+
+    // Return the array of unique elements
+    return uniqueArr;
+}
+console.log(findUniqueElements([1, 2, 2, 3, 4, 4, 5])); // [1, 2, 3, 4, 5]
+console.log(findUniqueElements(["a", "b", "a", "c", "b"])); // ["a", "b", "c"]
+console.log(findUniqueElements([])); // []
+
 
 
 
 console.log("------------------------------------ ::");
+// Problem 12: Find the largest word in a sentence.
+
+// Approach (step-wise):
+//   - Input: sentence (expected a string)
+//   - Output: the largest word (string) in the sentence; if multiple, return the first largest
+//   - Error modes: if input is not a string or is empty, return "" and print a message
+//
+// Steps to implement:
+//   1. Validate input: check if sentence is a string and not empty
+//   2. Loop through each character to manually split words (words are separated by spaces)
+//   3. Track the current word and compare its length to the largest found so far
+//   4. After the loop, check the last word (if sentence doesn't end with space)
+//   5. Return the largest word
+
+function findLargestWord(sentence) {
+    // validate
+    if (typeof sentence !== 'string') {
+        console.log("Invalid Input");
+        return "";
+    }
+    if (sentence.length === 0) {
+        return "";
+    }
+
+    var largestWord = ""; // Stores the largest word found
+    var currentWord = ""; // Builds the current word character by character
+
+    // Loop through each character
+    for (var i = 0; i < sentence.length; i++) {
+        var ch = sentence[i];
+
+        // Check for space (word separator)
+        if (ch === ' ' || ch === '\t' || ch === '\n') {
+            // End of a word
+            if (currentWord.length > largestWord.length) {
+                largestWord = currentWord; // Update largest if current is longer
+            }
+            currentWord = ""; // Reset for next word
+        } else {
+            // Add character to current word
+            currentWord = currentWord + ch;
+        }
+    }
+
+    // Check last word (if sentence doesn't end with space)
+    if (currentWord.length > largestWord.length) {
+        largestWord = currentWord;
+    }
+
+    // Return the largest word
+    return largestWord;
+}
+console.log(findLargestWord("I am learning JavaScript now")); // "JavaScript"
+console.log(findLargestWord("Hello world")); // "Hello"
+console.log(findLargestWord("a ab abc abcd abcde")); // "abcde"
+
+
+console.log("------------------------------------ ::");
 // Problem 13: Find the reverse of an array.
+
+// Approach (step-wise):
+//   - Input: arr (expected an array of numbers or strings)
+//   - Output: a new array containing the elements of arr in reverse order
+//   - Error modes: if arr is not an array or is empty, return [] and print a message
+//
+// Steps to implement:
+//   1. Validate input: check if arr is an array and has at least one element
+//   2. Create a new array to store reversed elements (reversedArr)
+//   3. Loop through arr from the last element to the first
+//   4. Add each element to reversedArr
+//   5. Return reversedArr
+
+function reverseArray(arr) {
+    if (!arr || typeof arr.length !== 'number') {
+        console.log("Invalid Input");
+        return [];
+    }
+    if (arr.length === 0) {
+        return [];
+    }
+
+    // Create array to store reversed elements
+    var reversedArr = [];
+
+    // Loop from last to first element
+    for (var i = arr.length - 1; i >= 0; i--) {
+        // Add current element to reversedArr
+        reversedArr[reversedArr.length] = arr[i];
+    }
+
+    // Return the reversed array
+    return reversedArr;
+}
+console.log(reverseArray([1, 2, 3, 4, 5])); // [5, 4, 3, 2, 1]
+console.log(reverseArray(["a", "b", "c"])); // ["c", "b", "a"]
 
 
 
 console.log("------------------------------------ ::");
 // Problem 14: Find the sum of all prime numbers up to N.
 
+// Approach (step-wise):
+//   - Input: N (expected a positive integer >= 2)
+//   - Output: sum of all prime numbers from 2 up to N (inclusive)
+//   - Error modes: if N is not a number, not an integer, or < 2, return 0 and print a message
+//
+// Steps to implement:
+//   1. Validate input: check type, integer-ness, and N >= 2
+//   2. Loop from 2 to N
+//   3. For each number, check if it is prime (manual check, no built-ins)
+//   4. If prime, add to sum
+//   5. Return the sum
+
+function sumOfPrimes(N) {
+    // validate
+    if (typeof N !== 'number' || N % 1 !== 0 || N < 2) {
+        console.log("Invalid Input");
+        return 0;
+    }
+    var sum = 0; // Stores the sum of primes
+    // Loop from 2 to N
+    for (var num = 2; num <= N; num++) {
+        var isPrime = true; // Assume num is prime
+        // Check if num is prime
+        // Only need to check divisibility up to num/2
+        for (var i = 2; i <= num / 2; i++) {
+            if (num % i === 0) {
+                isPrime = false; // Found a divisor, not prime
+                break;
+            }
+        }
+        // If prime, add to sum
+        if (isPrime) {
+            sum = sum + num;
+        }
+    }
+    // Return the sum
+    return sum;
+}
+console.log(sumOfPrimes(10)); // 17 (2 + 3 + 5 + 7)
+console.log(sumOfPrimes(20)); // 77
+console.log(sumOfPrimes(1));  // 0
+
 
 
 console.log("------------------------------------ ::");
 // Problem 15: Find the missing number in an array from 1 to N.
 
+// Approach (step-wise):
+//   - Input: arr (array of numbers, length N-1), N (expected positive integer)
+//   - Output: the missing number from 1 to N
+//   - Error modes: if arr is not an array, N is not a positive integer, or arr length != N-1, return null and print a message
+//
+// Steps to implement:
+//   1. Validate input: arr is array, N is positive integer, arr.length == N-1
+//   2. Calculate expected sum of numbers from 1 to N (formula: N*(N+1)/2)
+//   3. Calculate actual sum of elements in arr (manual loop)
+//   4. The missing number is (expected sum - actual sum)
+//   5. Return the missing number
+
+function findMissingNumber(arr, N) {
+    // validate
+    if (!arr || typeof arr.length !== 'number' || typeof N !== 'number' || N % 1 !== 0 || N <= 0 || arr.length !== N - 1) {
+        console.log("Invalid input");
+        return null;
+    }
+
+    // Calculate expected sum from 1 to N
+    var expectedSum = N * (N + 1) / 2;
+    // Calculate actual sum of elements in arr
+    var actualSum = 0;
+    for (var i = 0; i < arr.length; i++) {
+        actualSum = actualSum + arr[i];
+    }
+    // Find the missing number
+    var missingNumber = expectedSum - actualSum;
+    // Return the missing number
+    return missingNumber;
+}
+console.log(findMissingNumber([1, 2, 4, 5], 5)); // 3
+console.log(findMissingNumber([2, 3, 1, 5], 5)); // 4
+console.log(findMissingNumber([1], 2)); // 2
+console.log(findMissingNumber([], 1)); // 1
+
+
 
 
 console.log("------------------------------------ ::");
 // Problem 16: Find the longest palindrome in a string.
+
+// Approach (step-wise):
+//   - Input: s (expected a string)
+//   - Output: the longest palindrome substring in s (if multiple, return the first longest)
+//   - Error modes: if s is not a string or is empty, return "" and print a message
+//
+// Steps to implement:
+//   1. Validate input: check if s is a string and not empty
+//   2. For each possible substring in s:
+//        a. For every start index, try every possible end index (start <= end)
+//        b. For each substring, check if it is a palindrome (manual check, no built-ins)
+//        c. If palindrome and longer than current longest, update longest
+//   3. Return the longest palindrome found
+
+function findLongestPalindrome(s) {
+    // validate
+    if (typeof s !== 'string') {
+        console.log("Invalid Input");
+        return "";
+    }
+    if (s.length === 0) {
+        return "";
+    }
+    var longest = ""; // Stores the longest palindrome found
+
+    // Try every possible substring
+    for (var start = 0; start < s.length; start++) {
+        for (var end = start; end < s.length; end++) {
+            // Build substring manually
+            var sub = "";
+            for (var k = start; k <= end; k++) {
+                sub = sub + s[k];
+            }
+
+            // Check if sub is a palindrome (manual two-pointer check)
+            var left = 0;
+            var right = sub.length - 1;
+            var isPalindrome = true;
+            while (left < right) {
+                if (sub[left] !== sub[right]) {
+                    isPalindrome = false;
+                    break;
+                }
+                left = left + 1;
+                right = right - 1;
+            }
+
+            // If palindrome and longer than current longest, update longest
+            if (isPalindrome && sub.length > longest.length) {
+                longest = sub;
+            }
+        }
+    }
+
+    // Return the longest palindrome found
+    return longest;
+}
+console.log(findLongestPalindrome("babad")); // "bab" or "aba"
+console.log(findLongestPalindrome("cbbd"));  // "bb"
+console.log(findLongestPalindrome("racecar")); // "racecar"
+console.log(findLongestPalindrome("a")); // "a"
+console.log(findLongestPalindrome("")); // ""
