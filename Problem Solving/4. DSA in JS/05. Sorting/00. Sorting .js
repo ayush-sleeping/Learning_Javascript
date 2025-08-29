@@ -422,6 +422,36 @@ var arr = [8, 3, 5, 4, 7, 6, 1, 2];
 quickSort(arr, 0, arr.length - 1);
 console.log(arr); // Output: [1, 2, 3, 4, 5, 6, 7, 8]
 
+// or
+
+function quickSort(arr) {
+    if (arr.length <= 1) {
+        return arr;
+    }
+
+    const pivot = arr[0];
+    const left = [];
+    const right = [];
+
+    for (let i = 1; i < arr.length; i++) {
+        if (arr[i] < pivot) {
+            left.push(arr[i]);
+        } else {
+            right.push(arr[i]);
+        }
+    }
+
+    return [...quickSort(left), pivot, ...quickSort(right)];
+}
+console.log(quickSort([8, 3, 5, 4, 7, 6, 1, 2, 12]))
+// time complexity [Average Case: O(log n)]
+// time complexity [Best Case: O(n log n)]
+// time complexity [Worst Case: O(n square)]
+//
+// Space  complexity [Average Case: O(log n)
+// Space complexity [Worst Case: O(n square)]
+
+
 
 
 console.log("-------------------------------------------- ::");

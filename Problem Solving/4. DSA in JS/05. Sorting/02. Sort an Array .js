@@ -131,3 +131,47 @@ function mergeManual(left, right) {
 }
 
 console.log(sortArrayMerge([29, 10, 14, 37, 14])); // Output: [1, 2, 3, 4, 5, 6, 7, 8]
+
+
+
+// Or lets use the Quick sort :
+
+/**
+ * @param {number[]} nums
+ * @return {number[]}
+ */
+
+// Function to sort an array using Quick sort
+function sortArray(arr) {
+    return quickSort(arr); // Call quickSort to sort the array
+}
+
+function pivot(arr, start = 0, end = arr.length - 1) {
+    function swap(array, i, j) {
+        let temp = arr[i];
+        array[i] = array[j];
+        array[j] = temp;
+    }
+    let pivot = arr[start];      // Choose first element as pivot
+    let swapIdx = start;         // Track where to swap smaller elements
+
+    for (let i = start + 1; i < arr.length; i++) {
+        if (arr[i] < pivot) {    // If current is less than pivot
+            swapIdx++;
+            swap(arr, swapIdx, i); // Move it to left of pivot
+        }
+    }
+    swap(arr, start, swapIdx);   // Place pivot in correct position
+    return swapIdx;              // Return pivot index
+}
+
+function quickSort(arr, start = 0, end = arr.length - 1) {
+    if (start < end) {
+        const pivotIndex = pivot(arr, start, end); // Partition array
+        quickSort(arr, start, pivotIndex - 1);     // Sort left part
+        quickSort(arr, pivotIndex + 1, end);       // Sort right part
+    }
+    return arr; // Return sorted array
+}
+
+console.log(sortArray([29, 10, 14, 37, 14])); // Output: [10, 14, 14, 29, 37]

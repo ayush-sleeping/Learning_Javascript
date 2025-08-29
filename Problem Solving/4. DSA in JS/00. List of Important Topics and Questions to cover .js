@@ -21,6 +21,14 @@
 
 🎯 Level 1 – FOUNDATIONS (Start Here!)
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+• Big O Notation & Complexity Analysis [ Understand how to analyze the efficiency of algorithms (time and space) ]
+• Basic Recursion Concepts [ What is recursion, base case, and how function calls work (not advanced problems, just the concept) ]
+• Basic Data Types & Variables [ Number, String, Boolean, Null, Undefined, Object basics ]
+• Input/Output Handling [ How to read and print data (console, prompt, etc.) ]
+• Basic Error Handling [ Try/catch, handling invalid inputs, defensive programming ]
+• Basic Function Design [ How to write, call, and return values from functions ]
+
 • Arrays (1D, 2D) •••
 • Strings (Basic operations) •••
 • Sorting (Bubble, Selection, Insertion)
