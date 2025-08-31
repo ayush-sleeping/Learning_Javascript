@@ -1,3 +1,9 @@
+// Hash Function (Core Concept)
+//     ↓
+// Hash Table (Data Structure Implementation)
+//     ↓
+// Hash Map & Hash Set (High-level abstractions we use)
+
 // Hashmaps and Hashsets ::
 /*
 WHAT ARE HASH DATA STRUCTURES?
@@ -8,6 +14,8 @@ This allows for super fast lookups, insertions, and deletions - usually O(1) tim
 Think of it like a library with a catalog system:
 - Instead of searching every book (O(n)), you use the catalog to find the exact shelf (O(1))
 - The catalog number is like a "hash" of the book's title
+
+
 */
 
 
