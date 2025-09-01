@@ -2,12 +2,35 @@
 // Write a function isEven(num) that returns true if even, false if odd
 // Example: isEven(4) → true, isEven(7) → false
 
+function isEven(num) {
+    if (num % 2 === 0) {
+        return true; // Return true for even
+    } else {
+        return false; // Return false for odd
+    }
+}
+console.log(isEven(4)); // true
+console.log(isEven(7)); // false
+
+
 
 
 console.log("------------------------------------ ::");
 //  Problem 2: Create a function to find maximum of three numbers
 // Write a function findMax(a, b, c) that returns the largest number
 // Example: findMax(5, 9, 3) → 9
+
+function findMax(a, b, c) {
+    if (a > b && a > c) {
+        return a; // Return the largest number
+    } else if (b > a && b > c) {
+        return b;
+    } else {
+        return c;
+    }
+}
+console.log(findMax(5, 9, 3)); // 9
+
 
 
 
@@ -17,12 +40,29 @@ console.log("------------------------------------ ::");
 // Formula: Area = π × radius²
 // Example: circleArea(5) → 78.54 (approximately)
 
+function calculateCircleArea(radius) {
+    const pi = 3.14159; // Approximate value of π
+    var area = pi * radius * radius; // Area calculation
+    return area;
+}
+console.log(calculateCircleArea(5)); // Approximately 78.54
+
+
 
 
 console.log("------------------------------------ ::");
 //  Problem 4: Create a function to reverse a string
 // Write a function reverseString(str) that returns reversed string
 // Example: reverseString("hello") → "olleh"
+
+function reverseString(str) {
+    var reversed = "";
+    for (var i = str.length - 1; i >= 0; i--) {
+        reversed = reversed + str[i]; // Append each character in reverse order
+    }
+    return reversed;
+}
+console.log(reverseString("hello")); // "olleh"
 
 
 
