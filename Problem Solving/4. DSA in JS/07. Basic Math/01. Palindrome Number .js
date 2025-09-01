@@ -92,11 +92,7 @@ console.log(isPalindrome(123)); // false
 // ------------------------------------------------------------------ ::
 // ------------------------------------------------------------------ ::
 const isPalindrome = function (x) {
-    // Check if the number is negative
-    if (x < 0) return false;
-
-    // Compare the original number with its reverse
-    return x === + x.toString().split("").reverse().join("");
+    return x < 0 ? false : x === +x.toString().split("").reverse().join("");
 };
-const res = isPalindrome(10);
-console.log(res); // false
+const res = isPalindrome(101);
+console.log(res); // true
