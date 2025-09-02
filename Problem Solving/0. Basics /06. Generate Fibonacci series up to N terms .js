@@ -22,3 +22,22 @@ for (let i = 1; i <= n; i++) {
 // 13
 // 21
 // 34
+
+
+
+// ------------------------------------------------------------------------ ::
+
+function generateFibonacciSeries(x) {
+    let a = 0;
+    let b = 1;
+    let series = [];
+
+    for (let i = 1; i <= x; i++) {
+        console.log(a);
+        let next = a + b;
+        a = b;
+        b = next;
+    }
+    return series;
+}
+console.log(generateFibonacciSeries(10));
