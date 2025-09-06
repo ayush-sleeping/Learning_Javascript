@@ -140,3 +140,30 @@ console.log("------------------------------------ ::");
 
 console.log("------------------------------------ ::");
 // Problem 18: Create a function to find the longest word in a string.
+
+
+
+// Example: Checking if a student passes or fails using variables, datatypes, operators, and conditionals
+
+// VARIABLES (container for data)
+let studentName = "Ayush";     // string datatype
+let subject1 = 45;             // number datatype
+let subject2 = 30;
+let subject3 = 60;
+let isStudent = true;          // boolean datatype
+
+// OPERATOR (arithmetic) - calculate total & average
+let totalMarks = subject1 + subject2 + subject3;   // addition operator
+let average = totalMarks / 3;                      // division operator
+
+// Print values
+console.log("Student:", studentName);
+console.log("Total Marks:", totalMarks);
+console.log("Average Marks:", average);
+
+// CONDITIONAL STATEMENTS (decision making)
+if (isStudent && average >= 40) {   // logical AND + comparison
+    console.log(studentName + " has PASSED");
+} else {
+    console.log(studentName + " has FAILED");
+}
