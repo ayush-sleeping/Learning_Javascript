@@ -354,25 +354,145 @@ console.log(mergeArray([1, 2, 3], [2, 3, 4, 5])); // Output: [1, 2, 3, 4, 5]
 
 console.log("------------------------------------ ::");
 // - Find union of two arrays               // Reason: Combining sets, basic hashing
+function unionArrays(arr1, arr2) {
 
+    let merged = [];
+    for (let i = 0; i < arr1.length; i++) {
+        merged[merged.length] = arr1[i];
+    }
+    for (let j = 0; j < arr2.length; j++) {
+        merged[merged.length] = arr2[j];
+    }
+    let unique = [];
+    for (let k = 0; k < merged.length; k++) {
+        let found = false;
+
+        for (let l = 0; l < unique.length; l++) {
+            if (merged[k] === unique[l]) {
+                found = true;
+                break;
+            }
+        }
+        if (!found) {
+            unique[unique.length] = merged[k];
+        }
+    }
+    return unique;
+}
+console.log(unionArrays([1, 2, 3], [2, 3, 4, 5])); // Output: [1, 2, 3, 4, 5]
 
 
 
 console.log("------------------------------------ ::");
 // - Sort array in ascending order          // Reason: Fundamental sorting understanding
-
+function sortAscending(arr) {
+    for (let i = 0; i < arr.length - 1; i++) {         // Outer loop for each element
+        let minIndex = i;                              // Assume current index is minimum
+        for (let j = i + 1; j < arr.length; j++) {     // Inner loop to find the smallest element
+            if (arr[j] < arr[minIndex]) {              // If a smaller element is found
+                minIndex = j;                          // Update minIndex
+            }
+        }
+        // Swap arr[i] and arr[minIndex] if needed
+        if (minIndex !== i) {
+            let temp = arr[i];                         // Store current value in temp
+            arr[i] = arr[minIndex];                    // Place smallest value at current position
+            arr[minIndex] = temp;                      // Place temp value at minIndex
+        }
+    }
+    return arr;                                        // Return sorted array
+}
+console.log(sortAscending([5, 2, 8, 1, 3])); // Output: [1, 2, 3, 5, 8]
 
 
 
 console.log("------------------------------------ ::");
 // - Sort array in descending order         // Reason: Sorting variant, comparator idea
-
+function sortDescending(arr) {
+    for (let i = 0; i < arr.length; i++) {
+        let maxIndex = i;
+        for (let j = i + 1; j < arr.length; j++) {
+            if (arr[j] > arr[maxIndex]) {
+                maxIndex = j;
+            }
+        }
+        if (maxIndex !== i) {
+            let temp = arr[i];
+            arr[i] = arr[maxIndex];
+            arr[maxIndex] = temp;
+        }
+    }
+    return arr;
+}
+console.log(sortDescending([5, 2, 8, 1, 3])); // Output: [8, 5, 3, 2, 1]
 
 
 
 console.log("------------------------------------ ::");
 // - Merge two sorted arrays without built-in sort // Reason: Two-pointer technique
+function mergeSortedArrays(arr1, arr2) {
+    let merged = [];                      // Array to store the merged result
+    let i = 0;                            // Pointer for arr1
+    let j = 0;                            // Pointer for arr2
 
+    // Loop until one array is fully traversed
+    while (i < arr1.length && j < arr2.length) {
+        if (arr1[i] < arr2[j]) {          // If arr1 element is smaller
+            merged[merged.length] = arr1[i]; // Add arr1 element to merged
+            i++;                          // Move pointer in arr1
+        } else {
+            merged[merged.length] = arr2[j]; // Add arr2 element to merged
+            j++;                          // Move pointer in arr2
+        }
+    }
+
+    // Add remaining elements from arr1 (if any)
+    while (i < arr1.length) {
+        merged[merged.length] = arr1[i];
+        i++;
+    }
+
+    // Add remaining elements from arr2 (if any)
+    while (j < arr2.length) {
+        merged[merged.length] = arr2[j];
+        j++;
+    }
+
+    return merged;                        // Return the merged sorted array
+}
+
+console.log(mergeSortedArrays([1, 3, 5], [2, 4, 6])); // Output: [1, 2, 3, 4, 5, 6]
+console.log(mergeSortedArrays([1, 2, 7], [3, 4, 5, 6])); // Output: [1, 2, 3, 4, 5, 6, 7]
+
+
+
+console.log("------------------------------------ ::");
+// - Count words in a sentence              // Reason: String parsing and token counting
+
+
+
+console.log("------------------------------------ ::");
+// - Remove spaces from string              // Reason: String filtering/parsing
+
+
+
+console.log("------------------------------------ ::");
+// - Count the number of vowels in a string// Reason: Simple character checks
+
+
+
+console.log("------------------------------------ ::");
+// - Sum of first N natural numbers         // Reason: Basic math and loops
+
+
+
+console.log("------------------------------------ ::");
+// - Check if a number is even or odd      // Reason: Bitwise/mod operator basics
+
+
+
+console.log("------------------------------------ ::");
+// - Find index of element in array         // Reason: Linear search primitive
 
 
 
@@ -445,6 +565,22 @@ if (num3 > 1) {
     console.log("Num must be greater than +1.");
 }
 
+let num = 5;
+let pattern = "";
+if (num > 1) {
+    for (let i = 1; i <= num; i++) {                  // Loop for each row (1 to num)
+        for (let j = 1; j <= (num - i); j++) {        // Add spaces before stars to center the pyramid
+            pattern = pattern + "  ";                 // Each space is two spaces for better alignment
+        }
+        for (let k = 1; k <= ((2 * i) - 1); k++) {    // Add stars for the current row
+            pattern = pattern + "* ";                 // Add a star and a space
+        }
+        pattern = pattern + "\n";                     // Move to the next line after each row
+    }
+    console.log(pattern);                             // Print the complete pattern
+} else {
+    console.log("Invalid Number");                    // Handle invalid input
+}
 /*
 Pyramid Triangle :
 
