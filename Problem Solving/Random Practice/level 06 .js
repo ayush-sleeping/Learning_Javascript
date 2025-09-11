@@ -468,32 +468,118 @@ console.log(mergeSortedArrays([1, 2, 7], [3, 4, 5, 6])); // Output: [1, 2, 3, 4,
 
 console.log("------------------------------------ ::");
 // - Count words in a sentence              // Reason: String parsing and token counting
+function countWords(sentence) {
+    let wordCount = 0;                           // Counter for words
+    let inWord = false;                          // Flag to track if we're inside a word
+    for (let i = 0; i < sentence.length; i++) {  // Loop through each character
+        let char = sentence[i];                  // Get current character
+        if (char !== ' ') {                      // If character is not a space
+            if (!inWord) {                       // If we weren't in a word before
+                wordCount++;                     // Start of a new word, increment count
+                inWord = true;                   // Set flag that we're now in a word
+            }
+        } else {                                 // If character is a space
+            inWord = false;                      // We're no longer in a word
+        }
+    }
+    return wordCount;                            // Return total word count
+}
+console.log(countWords("Hello world")); // Output: 2
+console.log(countWords("JavaScript is awesome")); // Output: 3
+console.log(countWords("  Hello   world  ")); // Output: 2 (handles extra spaces)
+console.log(countWords("")); // Output: 0
 
 
 
 console.log("------------------------------------ ::");
 // - Remove spaces from string              // Reason: String filtering/parsing
+function removeSpaces(str) {
+    let result = "";
+    for (let i = 0; i < str.length; i++) {
+        if (str[i] !== " ") {
+            result = result + str[i];
+        }
+    }
+    return result;
+}
+console.log(removeSpaces("hello world"));         // Output: "helloworld"
+console.log(removeSpaces("  JavaScript  is fun ")); // Output: "JavaScriptisfun"
+console.log(removeSpaces("   "));                // Output: ""
+console.log(removeSpaces("noSpaces"));           // Output: "noSpaces"
 
 
 
 console.log("------------------------------------ ::");
-// - Count the number of vowels in a string// Reason: Simple character checks
+// - Count the number of vowels in a string.   // Reason: Simple character checks
+function countVowels(str) {
+    let count = 0;
+    let vowels = "aeiouAEIOU";
+
+    for (let i = 0; i < str.length; i++) {
+        let char = str[i];
+        for (let j = 0; j < vowels.length; j++) {
+            if (char === vowels[j]) {
+                count++;
+                break;
+            }
+        }
+    }
+    return count;
+}
+console.log(countVowels("hello world"));      // Output: 3
+console.log(countVowels("JavaScript"));       // Output: 3
+console.log(countVowels("AEIOUaeiou"));       // Output: 10
+console.log(countVowels("xyz"));              // Output: 0
 
 
 
 console.log("------------------------------------ ::");
 // - Sum of first N natural numbers         // Reason: Basic math and loops
+function sumOfFirstN(n) {
+    let sum = 0;
+    for (let i = 1; i <= n; i++) {
+        sum = sum + i;
+    }
+    return sum;
+}
+console.log(sumOfFirstN(5));  // Output: 15 (1+2+3+4+5)
+console.log(sumOfFirstN(10)); // Output: 55 (1+2+...+10)
+console.log(sumOfFirstN(1));  // Output: 1
+console.log(sumOfFirstN(0));  // Output: 0
 
 
 
 console.log("------------------------------------ ::");
 // - Check if a number is even or odd      // Reason: Bitwise/mod operator basics
+function isEvenOrOdd(num) {
+    if (num % 2 === 0) {                // If remainder is 0 when divided by 2
+        return "Even";                  // Number is even
+    } else {
+        return "Odd";                   // Number is odd
+    }
+}
+console.log(isEvenOrOdd(4));  // Output: "Even"
+console.log(isEvenOrOdd(7));  // Output: "Odd"
+console.log(isEvenOrOdd(0));  // Output: "Even"
+console.log(isEvenOrOdd(-3)); // Output: "Odd"
 
 
 
 console.log("------------------------------------ ::");
 // - Find index of element in array         // Reason: Linear search primitive
+function findIndex(arr, target) {
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] === target) {
+            return i;
+        }
+    }
+    return -1;
+}
 
+// Example usage:
+console.log(findIndex([10, 20, 30, 40, 50], 30)); // Output: 2
+console.log(findIndex([1, 2, 3, 4, 5], 6));      // Output: -1
+console.log(findIndex([], 10));                  // Output: -1
 
 
 

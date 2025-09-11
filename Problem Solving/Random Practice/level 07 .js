@@ -9,6 +9,7 @@
 // - Convert array of string to uppercase                // Reason: Transformations
 // - Check if two strings are anagrams                   // Reason: Counting/sorting approach
 // - Generate Fibonacci series up to N terms             // Reason: Sequence generation
+// - Check if number is Armstrong number
 // - Find Factorial of a number                          // Reason: Recursion/iteration basics
 // - Calculate power of a number                         // Reason: Loops/fast power
 // - Check if number is prime                            // Reason: Looping & optimization
