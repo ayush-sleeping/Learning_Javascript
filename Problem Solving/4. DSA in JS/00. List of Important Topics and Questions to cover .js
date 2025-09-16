@@ -1,5 +1,4 @@
 /*
-
 🔥 MOST IMPORTANT TOPICS FOR CODING INTERVIEWS:
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
@@ -77,83 +76,6 @@
 • Advanced Math (Modular Arithmetic, Sieve of Eratosthenes, Modular Exponentiation)
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
-📅 5-MONTH MASTERY PLAN (AUGUST TO DECEMBER):
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
-🌟 AUGUST – Level 1 (Foundations)
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-📋 Goal: Get crystal clear with basics and build speed.
-📚 Topics to Learn & Practice:
-
-• Conditional Statements (if/else, switch) (3Q must to practice)
-• Loops (for, while, do-while) (3Q must to practice)
-• Arrays (1D, 2D) (3Q must to practice)
-• Strings (Basic operations) (3Q must to practice)
-• Sorting (Bubble, Selection, Insertion) (3Q must to practice)
-• Searching (Linear, Binary) (3Q must to practice)
-• Basic Math (GCD, LCM, Prime) (3Q must to practice)
-• Hashmaps/HashSets (Basics) (3Q must to practice)
-
-
-🚀 SEPTEMBER – Level 2 (Intermediate) + Level 1 Revision
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-📋 Goal: Learn intermediate problem-solving while keeping Level 1 sharp.
-📚 Topics to Learn & Practice:
-
-• Recursion (Basic)
-• Stack (Implementation + problems)
-• Queue (Implementation + problems)
-• Linked List (Singly, Doubly, Circular)
-• Advanced Sorting (Merge, Quick, Counting)
-• Two-Pointer Technique
-• Sliding Window
-• Prefix Sum/Difference Array
-• Backtracking (N-Queens, Rat in Maze)
-• Bit Manipulation (Basics)
-• Basic Greedy Algorithms
-
-
-⚡ OCTOBER – Level 3 (Advanced) + Levels 2 & 1 Revision
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-📋 Goal: Understand advanced structures and graph concepts.
-📚 Topics to Learn & Practice:
-• Trees (Binary Tree, BST, Traversals, Height, Diameter)
-• Heaps (Min/Max, Heap Sort)
-• Trie (Insert, Search, Prefix Match)
-• Graphs (BFS, DFS, Connected Components)
-• Disjoint Set (Union-Find)
-• Topological Sort
-• Dijkstra's Algorithm
-• Bellman-Ford
-• Floyd-Warshall
-• Advanced Greedy (Huffman, Activity Selection)
-
-
-🔥 NOVEMBER – Level 4 (Expert) + Levels 3, 2 & 1 Revision
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-📋 Goal: Conquer dynamic programming and advanced algorithms.
-📚 Topics to Learn & Practice:
-• Dynamic Programming (1D, 2D, Knapsack, LIS, LCS, Matrix DP)
-• Advanced Graph Algorithms (Prim's, Kruskal's, Tarjan's, Kosaraju's)
-• Advanced Trees (AVL, Red-Black, Segment Tree, Fenwick Tree)
-• LRU Cache Design
-• String Matching (KMP, Rabin-Karp, Z-Algorithm)
-• Advanced Bit Manipulation
-• Computational Geometry
-• Advanced Math (Sieve, Modular Arithmetic)
-
-
-🏆 DECEMBER – Full Mixed Revision & Mock Interviews
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-📋 Goal: Apply everything in timed, real-interview conditions.
-📚 Plan:
-• Daily: 2–3 hours mixed problem solving (all levels)
-• 1 timed mock interview (LeetCode contest style or Pramp)
-• Weekly: Analyze weak topics & re-learn quickly
-• 1 full system design + 1 behavioral interview prep
-
-🎯 End of Month: 500–700 problems solved total | Ready for any DSA coding round!
 
 ==========================================================================================
 |  #  |    CATEGORY     |         SUBTOPIC          |           PROBLEM            |       ALGORITHM        |
