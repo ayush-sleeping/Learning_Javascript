@@ -257,29 +257,6 @@ Explore this repo to learn, revise, and build your frontend development skills �
 
 <!-- --------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
 
-**Practical Level (Q91-Q99)**
-
-| Q# | Category | Problem | Concept | Link |
-|----|----------|---------|---------|------|
-| 91 | **DOM/Timers** | Create countdown timer | DOM manipulation with timer functions | [View](./Problem%20Solving/3.%20Practical/91.%20Create%20countdown%20timer%20.js) |
-| 92 | **Utility Functions** | Generate random integer | Mathematical random number generation | [View](./Problem%20Solving/3.%20Practical/92.%20Generate%20random%20integer%20.js) |
-| 93 | **String Analysis** | Find longest word in sentence | String parsing and length comparison | [View](./Problem%20Solving/3.%20Practical/93.%20Find%20longest%20word%20in%20sentence%20.js) |
-| 94 | **String Manipulation** | Truncate string | String slicing and text formatting | [View](./Problem%20Solving/3.%20Practical/94.%20Truncate%20string%20.js) |
-| 95 | **String Analysis** | Check for unique characters | Character uniqueness validation | [View](./Problem%20Solving/3.%20Practical/95.%20Check%20for%20unique%20characters%20.js) |
-| 96 | **Security/Utility** | Generate random password | Secure password generation algorithms | [View](./Problem%20Solving/3.%20Practical/96.%20Generate%20random%20password%20.js) |
-| 97 | **String Analysis** | Count word occurrences | Text analysis and frequency counting | [View](./Problem%20Solving/3.%20Practical/97.%20Count%20word%20occurrences%20.js) |
-| 98 | **DOM Manipulation** | Dynamically insert DOM components | Dynamic HTML element creation and insertion | [View](./Problem%20Solving/3.%20Practical/98.%20Dynamically%20insert%20DOM%20components%20.js) |
-| 99 | **Code Analysis** | Analyze code output | Code execution flow and output prediction | [View](./Problem%20Solving/3.%20Practical/99.%20Analyze%20code%20output%20.js) |
-
-<br>
-
-<p align="right"><a href="#top"><img src="https://img.shields.io/badge/-Back%20to%20Top-blueviolet?style=for-the-badge" /></a></p>
-
-<br>
-
-<br>
-
-<br>
 
 
 
@@ -305,15 +282,6 @@ Subtopics:
 5. Nested conditionals
 6. Ternary operator (for simple conditions)
 
-<details>
-<summary>📂 Conditional Statements</summary>
-
-| #  | Problem/File Name   | Link |
-|----|---------------------|------|
-| -  | (No files yet)      |      |
-
-</details>
-
 <br>
 
 
@@ -330,14 +298,6 @@ Subtopics:
 3. do-while loop
 4. for...of loop (for arrays)
 5. for...in loop (for objects)
-<details>
-<summary>📂 Loops</summary>
-
-| #  | Problem/File Name   | Link |
-|----|---------------------|------|
-| -  | (No files yet)      |      |
-
-</details>
 
 <br>
 
@@ -349,22 +309,6 @@ Arrays :
 - Index-based → Elements are stored in ordered indexes (0-based).
 - Dynamic → Unlike some other languages, JavaScript arrays can store different data types and their size can grow/shrink dynamically.
 - Built-in methods → Provides helpful methods like .push(), .pop(), .map(), .filter(), etc., for common operations.
-<details>
-<summary>📂 Arrays</summary>
-
-| #  | Problem/File Name                           | Link |
-|----|---------------------------------------------|------|
-| 1  | 00. Arrays .js                              | [View](./Problem%20Solving/4.%20DSA%20in%20JS/01.%20Arrays/00.%20Arrays%20.js) |
-| 2  | 01. Two Sum .js                             | [View](./Problem%20Solving/4.%20DSA%20in%20JS/01.%20Arrays/01.%20Two%20Sum%20.js) |
-| 3  | 02. Longest Common Prefix .js               | [View](./Problem%20Solving/4.%20DSA%20in%20JS/01.%20Arrays/02.%20Longest%20Common%20Prefix%20.js) |
-| 4  | 03. Remove Duplicates from Sorted Array.js  | [View](./Problem%20Solving/4.%20DSA%20in%20JS/01.%20Arrays/03.%20Remove%20Dublicates%20from%20sorted%20array.js) |
-| 5  | 04. Search Insert Position .js              | [View](./Problem%20Solving/4.%20DSA%20in%20JS/01.%20Arrays/04.%20Search%20Insert%20Position%20.js) |
-| 6  | 05. Plus One .js                            | [View](./Problem%20Solving/4.%20DSA%20in%20JS/01.%20Arrays/05.%20Plus%20One%20.js) |
-| 7  | 06. Merge Sorted Array .js                  | [View](./Problem%20Solving/4.%20DSA%20in%20JS/01.%20Arrays/06.%20Merge%20Sorted%20Array%20.js) |
-| 8  | 07. Single Number .js                       | [View](./Problem%20Solving/4.%20DSA%20in%20JS/01.%20Arrays/07.%20Single%20Number%20.js) |
-| 9  | 08. Majority Element .js                    | [View](./Problem%20Solving/4.%20DSA%20in%20JS/01.%20Arrays/08.%20Majority%20Element%20.js) |
-
-</details>
 
 <br>
 
@@ -376,18 +320,6 @@ Strings :
 - Text Handling → Useful for storing and processing text data (names, messages, etc.).
 - Operations → Common operations include length check, concatenation (+, +=), search (indexOf), extract (substring, slice), etc.
 - Two Ways → Can be created using string literals ("Hello") or the String object (new String("Hello")).
-<details>
-<summary>📂 Strings</summary>
-
-| #  | Problem/File Name                           | Link |
-|----|---------------------------------------------|------|
-| 1  | 00. Strings .js                             | [View](./Problem%20Solving/4.%20DSA%20in%20JS/02.%20Strings/00.%20Strings%20.js) |
-| 2  | 01. Valid Parentheses .js                   | [View](./Problem%20Solving/4.%20DSA%20in%20JS/02.%20Strings/01.%20Valid%20Parentheses%20.js) |
-| 3  | 02. Length of Last Word .js                 | [View](./Problem%20Solving/4.%20DSA%20in%20JS/02.%20Strings/02.%20Length%20of%20Last%20Word%20.js) |
-| 4  | 03. Valid Palindrome .js                    | [View](./Problem%20Solving/4.%20DSA%20in%20JS/02.%20Strings/03.%20Valid%20Palindrome%20.js) |
-| 5  | 04. Add Binary .js                          | [View](./Problem%20Solving/4.%20DSA%20in%20JS/02.%20Strings/04.%20Add%20Binary%20.js) |
-
-</details>
 
 <br>
 
@@ -408,14 +340,6 @@ Key Notes:
 - Comparison-based vs Non-comparison-based sorting:
   - Comparison: Bubble, Merge, Quick, Heap
   - Non-comparison: Counting, Radix, Bucket
-<details>
-<summary>📂 Sorting</summary>
-
-| #  | Problem/File Name               | Link |
-|----|---------------------------------|------|
-| 1  | 01. Merge Two Sorted Lists .js  | [View](./Problem%20Solving/4.%20DSA%20in%20JS/03.%20Sorting/01.%20Merge%20Two%20Sorted%20Lists%20.js) |
-
-</details>
 
 <br>
 
@@ -424,14 +348,7 @@ Key Notes:
 
 <!---------------------------------------------------------------- :: -->
 <!---------------------------------------------------------------- :: -->
-<details>
-<summary>📂 Searching</summary>
-
-| #  | Problem/File Name                           | Link |
-|----|---------------------------------------------|------|
-| 1  | 01. Same Tree (Breadth First Search).js     | [View](./Problem%20Solving/4.%20DSA%20in%20JS/04.%20Searching/01.%20Same%20Tree%20(Breadth%20First%20Search).js) |
-
-</details>
+Searching :
 
 <br>
 
@@ -439,42 +356,21 @@ Key Notes:
 
 <!---------------------------------------------------------------- :: -->
 <!---------------------------------------------------------------- :: -->
-<details>
-<summary>📂 Basic Math</summary>
-
-| #  | Problem/File Name              | Link |
-|----|--------------------------------|------|
-| 1  | 01. Palindrome Number .js      | [View](./Problem%20Solving/4.%20DSA%20in%20JS/06.%20Basic%20Math/01.%20Palindrome%20Number%20.js) |
-
-</details>
+Basic Math :
 
 <br>
 
 
 <!---------------------------------------------------------------- :: -->
 <!---------------------------------------------------------------- :: -->
-<details>
-<summary>📂 Hashmaps and Hashsets</summary>
-
-| #  | Problem/File Name   | Link |
-|----|---------------------|------|
-| -  | (No files yet)      |      |
-
-</details>
+Hashmaps and Hashsets :
 
 <br>
 
 
 <!---------------------------------------------------------------- :: -->
 <!---------------------------------------------------------------- :: -->
-<details>
-<summary>📂 Linked List</summary>
-
-| #  | Problem/File Name                             | Link |
-|----|-----------------------------------------------|------|
-| 1  | 01. Remove Duplicates from Sorted List.js     | [View](./Problem%20Solving/4.%20DSA%20in%20JS/Linked%20List%20/01.%20Remove%20Duplicates%20from%20Sorted%20List.js) |
-
-</details>
+Linked List :
 
 <br>
 

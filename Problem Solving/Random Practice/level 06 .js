@@ -1,26 +1,26 @@
 // ------------------------:: Revision and Practice the ESSENTIAL ::------------------------
-// - Reverse a string                     // Reason: Basic string manipulation and indexing
-// - Check if a string is a palindrome    // Reason: Two-pointer/string comparison pattern
-// - Reverse an array                      // Reason: Array manipulation fundamentals
-// - Find largest and smallest in array    // Reason: Single-pass traversal, common check
-// - Find frequency of elements in array   // Reason: Counting/hashmap basics
-// - Count occurrences of each character  // Reason: String frequency & hashing
+// - Reverse a string                     // DSA Topics: Arrays, Strings, Two Pointers
+// - Check if a string is a palindrome    // DSA Topics: Strings, Two Pointers
+// - Reverse an array                      // DSA Topics: Arrays, Two Pointers
+// - Find largest and smallest in array    // DSA Topics: Arrays, Single-pass Traversal
+// - Find frequency of elements in array   // DSA Topics: Hash Tables/Maps, Arrays
+// - Count occurrences of each character  // DSA Topics: Hash Tables/Maps, Strings
 
-// - Remove duplicates from array          // Reason: Deduplication patterns (set/map)
-// - * Find missing number in array          // Reason: Math/array trick (common interview ask)
-// - Merge two array                        // Reason: Array concatenation + dedupe/merge logic
-// - Find union of two arrays               // Reason: Combining sets, basic hashing
-// - Sort array in ascending order          // Reason: Fundamental sorting understanding
-// - Sort array in descending order         // Reason: Sorting variant, comparator idea
-// - Merge two sorted arrays without built-in sort // Reason: Two-pointer technique
+// - Remove duplicates from array          // DSA Topics: Hash Tables/Sets, Arrays
+// - Merge two array                        // DSA Topics: Arrays, Set Operations
+// - Find union of two arrays               // DSA Topics: Arrays, Set Operations, Hash Tables
+// - Sort array in ascending order          // DSA Topics: Sorting (Selection Sort)
+// - Sort array in descending order         // DSA Topics: Sorting (Selection Sort variant)
+// - Merge two sorted arrays without built-in sort // DSA Topics: Two Pointers, Merge Algorithm
+// - Count words in a sentence              // DSA Topics: Strings, Parsing
 
-// - Count words in a sentence              // Reason: String parsing and token counting
-// - Remove spaces from string              // Reason: String filtering/parsing
-// - Count the number of vowels in a string // Reason: Simple character checks
-// - Sum of first N natural numbers         // Reason: Basic math and loops
-// - Check if a number is even or odd      // Reason: Bitwise/mod operator basics
-// - Find index of element in array         // Reason: Linear search primitive
-// - * Print all type of star pattern        // Reason: Loop practice (visual)
+// - Remove spaces from string              // DSA Topics: Strings, Filtering
+// - Count the number of vowels in a string // DSA Topics: Strings, Character Processing
+// - Sum of first N natural numbers         // DSA Topics: Math, Arithmetic Progression
+// - Check if a number is even or odd      // DSA Topics: Math, Bitwise Operations
+// - Find index of element in array         // DSA Topics: Arrays, Linear Search
+// - * Find missing number in array          // DSA Topics: Math, Arrays
+// - * Print all type of star pattern        // DSA Topics: Nested Loops, Pattern Recognition
 
 
 console.log("------------------------------------ ::");
@@ -123,27 +123,33 @@ console.log(result); // largest: 12, smallest: 1
 
 // ------
 function findLargestSmallest(arr) {
-    let arrlength = 0;
-    while (arr[arrlength] !== undefined) {
-        arrlength++;
+    let arrlength = 0;                                // Initialize counter to find array length manually
+    while (arr[arrlength] !== undefined) {            // Loop while current index has a value (not undefined)
+        arrlength++;                                  // Increment counter to move to next index
     }
-    let largest = arr[0];
-    let smallest = arr[0];
-    for (let i = 1; i < arrlength; i++) {
-        let currentElement = arr[i];
-        if (currentElement > largest) {
-            largest = currentElement;
+    let largest = arr[0];                             // Set first element as initial largest value
+    let smallest = arr[0];                            // Set first element as initial smallest value
+
+    for (let i = 1; i < arrlength; i++) {            // Loop from second element to end of array
+        let currentElement = arr[i];                  // Get current element at index i
+
+        // ---
+        if (currentElement > largest) {               // If current element is bigger than largest so far
+            largest = currentElement;                 // Update largest to current element
         }
-        if (currentElement < smallest) {
-            smallest = currentElement;
+
+        // ---
+        if (currentElement < smallest) {              // If current element is smaller than smallest so far
+            smallest = currentElement;                // Update smallest to current element
         }
     }
-    let result = [];
-    result.largest = largest;
-    result.smallest = smallest;
-    return result;
+
+    let result = [];                                  // Create empty array to store results
+    result.largest = largest;                         // Add largest value as property to result array
+    result.smallest = smallest;                       // Add smallest value as property to result array
+    return result;                                    // Return the result array with both values
 }
-console.log(findLargestSmallest([4, 8, 2, 12, 1, 6, 17]));
+console.log(findLargestSmallest([4, 8, 2, 12, 1, 6, 17])); // Call function and print result
 
 
 
@@ -193,29 +199,38 @@ findFrequencyArray(test2);
 
 
 function findFreq(arr) {
-    let unique = [];
-    let count = [];
-    for (let i = 0; i < arr.length; i++) {
-        let element = arr[i];
-        let found = false;
-        for (let j = 0; j < unique.length; j++) {
-            if (unique[j] === element) {
-                count[j]++;
-                found = true;
-                break;
+    let unique = [];                        // Array to store unique elements found so far
+    let count = [];                         // Array to store count for each unique element
+
+
+    for (let i = 0; i < arr.length; i++) {  // Loop through each element in the input array
+        let element = arr[i];               // Get the current element
+        let found = false;                  // Flag to check if element is already in unique array
+
+
+        for (let j = 0; j < unique.length; j++) { // Loop through unique array to check for duplicates
+            if (unique[j] === element) {    // If element already exists in unique array
+                count[j]++;                 // Increment its count at the same index
+                found = true;               // Mark as found
+                break;                      // Exit the inner loop since we found it
             }
         }
-        if (!found) {
-            unique[unique.length] = element;
-            count[count.length] = 1;
+
+
+        if (!found) {                       // If element was not found in unique array
+            unique[unique.length] = element;// Add element to unique array
+            count[count.length] = 1;        // Set its count to 1 in count array
         }
     }
-    for (let k = 0; k < unique.length; k++) {
-        console.log(unique[k] + " - " + count[k]);
+
+
+    for (let k = 0; k < unique.length; k++) {      // Loop through all unique elements
+        console.log(unique[k] + " - " + count[k]); // Print each unique element and its count
     }
-    return unique;
+
+    return unique;                          // Return the array of unique elements
 }
-console.log(findFreq([1, 2, 3, 1, 1, 3, 1]));
+console.log(findFreq([1, 2, 3, 1, 1, 3, 1]));      // Call function and print result
 
 
 
@@ -241,6 +256,8 @@ console.log(countCharOccur("hello world"));
 function findCharFreq(str) {
     let unique = [];                  // To store unique characters
     let count = [];                   // To store count of each unique character
+
+
     for (let i = 0; i < str.length; i++) {      // Loop through each character
         let character = str[i];                   // Get current character
         let found = false;                        // Flag to check if character is already in unique
@@ -252,14 +269,18 @@ function findCharFreq(str) {
                 break;                            // Exit inner loop
             }
         }
+
         if (!found) {                             // If character not found in unique
             unique[unique.length] = character;    // Add character to unique array
             count[count.length] = 1;              // Set its count to 1
         }
     }
+
+
     for (let k = 0; k < unique.length; k++) {     // Loop to print each unique char and its count
         console.log(unique[k] + " - " + count[k]);
     }
+
     return unique;                                // Return unique characters array
 }
 console.log(findCharFreq("programming"));         // Example usage
@@ -288,35 +309,6 @@ function removeDuplicates(arr) {
     return unique;
 }
 console.log(removeDuplicates([1, 2, 3, 2, 4, 1, 5, 3]));
-
-
-
-console.log("------------------------------------ ::");
-// - Find missing number in array          // Reason: Math/array trick (common interview ask)
-function findMissingNumber(arr) {
-    // Find the length of the array (should be N-1 if one number is missing)
-    let n = arr.length + 1;                  // Because one number is missing
-
-    // Calculate the expected sum of numbers from 1 to N
-    let expectedSum = 0;
-    for (let i = 1; i <= n; i++) {           // Loop from 1 to N
-        expectedSum = expectedSum + i;       // Add each number to expectedSum
-        //console.log(expectedSum);
-    }
-
-    // Calculate the actual sum of elements in the array
-    let actualSum = 0;
-    for (let j = 0; j < arr.length; j++) {   // Loop through the array
-        actualSum = actualSum + arr[j];      // Add each element to actualSum
-        //console.log(actualSum);
-    }
-
-    // The missing number is the difference
-    let missing = expectedSum - actualSum;   // Subtract actual from expected
-    return missing;                          // Return the missing number
-}
-console.log(findMissingNumber([1, 2, 4, 5])); // Output: 3
-console.log(findMissingNumber([2, 3, 1, 5])); // Output: 4
 
 
 
@@ -580,6 +572,35 @@ function findIndex(arr, target) {
 console.log(findIndex([10, 20, 30, 40, 50], 30)); // Output: 2
 console.log(findIndex([1, 2, 3, 4, 5], 6));      // Output: -1
 console.log(findIndex([], 10));                  // Output: -1
+
+
+
+console.log("------------------------------------ ::");
+// - Find missing number in array          // Reason: Math/array trick (common interview ask)
+function findMissingNumber(arr) {
+    // Find the length of the array (should be N-1 if one number is missing)
+    let n = arr.length + 1;                  // Because one number is missing
+
+    // Calculate the expected sum of numbers from 1 to N
+    let expectedSum = 0;
+    for (let i = 1; i <= n; i++) {           // Loop from 1 to N
+        expectedSum = expectedSum + i;       // Add each number to expectedSum
+        //console.log(expectedSum);
+    }
+
+    // Calculate the actual sum of elements in the array
+    let actualSum = 0;
+    for (let j = 0; j < arr.length; j++) {   // Loop through the array
+        actualSum = actualSum + arr[j];      // Add each element to actualSum
+        //console.log(actualSum);
+    }
+
+    // The missing number is the difference
+    let missing = expectedSum - actualSum;   // Subtract actual from expected
+    return missing;                          // Return the missing number
+}
+console.log(findMissingNumber([1, 2, 4, 5])); // Output: 3
+console.log(findMissingNumber([2, 3, 1, 5])); // Output: 4
 
 
 
